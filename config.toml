@@ -1,4 +1,5 @@
 baseURL = "https://rizi97.github.io/hugo-my-portfolio/"
+## baseURL = "/"
 title = 'Rizwan Portfolio'
 
 publishDir = "docs"
@@ -25,4 +26,4 @@ publishDir = "docs"
 
 
 [Params]
-siteLogo = "/hugo-my-portfolio/assets/img/logo/logo-2.png"
+siteLogo = "/assets/img/logo/logo-2.png"

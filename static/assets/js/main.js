@@ -78,13 +78,13 @@
     localStorage.setItem("darkTheme", isDarkTheme);
 
     if (isDarkTheme) {
-      darktoggle.src = "/hugo-my-portfolio/assets/img/icon/sun-icon.png";
+      darktoggle.src = "/assets/img/icon/sun-icon.png";
       home1bgimg.style.backgroundImage =
-        "url('/hugo-my-portfolio/assets/img/bg/page-bg-dark-1.jpg')";
+        "url('/assets/img/bg/page-bg-dark-1.jpg')";
     } else {
-      darktoggle.src = "/hugo-my-portfolio/assets/img/icon/mon-icon.png";
-      home1bgimg.style.backgroundImage = "url('/hugo-my-portfolio/assets/img/bg/page-bg-1.jpg')";
-      home2bgimg.style.backgroundImage = "url('/hugo-my-portfolio/assets/img/bg/page-bg-1.jpg')";
+      darktoggle.src = "/assets/img/icon/mon-icon.png";
+      home1bgimg.style.backgroundImage = "url('/assets/img/bg/page-bg-1.jpg')";
+      home2bgimg.style.backgroundImage = "url('/assets/img/bg/page-bg-1.jpg')";
     }
   }
   // Check if the user preference is already stored in local storage
@@ -94,9 +94,9 @@
     // Apply the dark theme if the preference is set to true
     if (isDarkTheme) {
       $("body").addClass("dark-theme");
-      darktoggle.src = "/hugo-my-portfolio/assets/img/icon/sun-icon.png";
+      darktoggle.src = "/assets/img/icon/sun-icon.png";
       home1bgimg.style.backgroundImage =
-        "url('/hugo-my-portfolio/assets/img/bg/page-bg-dark-1.jpg')";
+        "url('/assets/img/bg/page-bg-dark-1.jpg')";
     }
 
     // Attach click event to the specified div

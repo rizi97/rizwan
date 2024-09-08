@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Portfolio: Shopify on Rizwan Portfolio</title>
-    <link>https://rizi97.github.io/hugo-my-portfolio/portfolio/shopify/</link>
+    <link>http://localhost:1313/hugo-my-portfolio/portfolio/shopify/</link>
     <description>Recent content in Portfolio: Shopify on Rizwan Portfolio</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 31 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://rizi97.github.io/hugo-my-portfolio/portfolio/shopify/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/hugo-my-portfolio/portfolio/shopify/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>KombuDrink</title>
-      <link>https://rizi97.github.io/hugo-my-portfolio/portfolio/shopify/kombudrink/</link>
+      <link>http://localhost:1313/hugo-my-portfolio/portfolio/shopify/kombudrink/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/hugo-my-portfolio/portfolio/shopify/kombudrink/</guid>
+      <guid>http://localhost:1313/hugo-my-portfolio/portfolio/shopify/kombudrink/</guid>
       <description></description>
     </item>
     <item>
       <title>Organics Care Crow</title>
-      <link>https://rizi97.github.io/hugo-my-portfolio/portfolio/shopify/organicscarecrow/</link>
+      <link>http://localhost:1313/hugo-my-portfolio/portfolio/shopify/organicscarecrow/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/hugo-my-portfolio/portfolio/shopify/organicscarecrow/</guid>
+      <guid>http://localhost:1313/hugo-my-portfolio/portfolio/shopify/organicscarecrow/</guid>
       <description></description>
     </item>
     <item>
       <title>Wood Stock Resources</title>
-      <link>https://rizi97.github.io/hugo-my-portfolio/portfolio/shopify/woodstockresources/</link>
+      <link>http://localhost:1313/hugo-my-portfolio/portfolio/shopify/woodstockresources/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/hugo-my-portfolio/portfolio/shopify/woodstockresources/</guid>
+      <guid>http://localhost:1313/hugo-my-portfolio/portfolio/shopify/woodstockresources/</guid>
       <description></description>
     </item>
     <item>
       <title>Organic Delivery Sydney</title>
-      <link>https://rizi97.github.io/hugo-my-portfolio/portfolio/shopify/organicdeliverysydney/</link>
+      <link>http://localhost:1313/hugo-my-portfolio/portfolio/shopify/organicdeliverysydney/</link>
       <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/hugo-my-portfolio/portfolio/shopify/organicdeliverysydney/</guid>
+      <guid>http://localhost:1313/hugo-my-portfolio/portfolio/shopify/organicdeliverysydney/</guid>
       <description></description>
     </item>
     <item>
       <title>Italian Shoes</title>
-      <link>https://rizi97.github.io/hugo-my-portfolio/portfolio/shopify/italianshoes/</link>
+      <link>http://localhost:1313/hugo-my-portfolio/portfolio/shopify/italianshoes/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/hugo-my-portfolio/portfolio/shopify/italianshoes/</guid>
+      <guid>http://localhost:1313/hugo-my-portfolio/portfolio/shopify/italianshoes/</guid>
       <description></description>
     </item>
   </channel>
