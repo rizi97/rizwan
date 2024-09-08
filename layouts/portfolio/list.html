@@ -49,9 +49,9 @@
                     <div
                       class="fillter-item specific {{ $bgClass }}"
                     >
-                      <a class="img" href="{{ $page.Params.link }}">
+                      <a class="img" href="{{ $page.Params.link | relURL }}">
                         <img
-                          src="{{ $page.Params.image }}"
+                          src="{{ $page.Params.image | relURL }}"
                           alt="{{ $page.Title }}"
                         />
                       </a>
