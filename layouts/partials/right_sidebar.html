@@ -4,10 +4,13 @@
     <nav class="bastami-main-menu main_menu">
       <ul>
 
-        {{ $currentPage := .Page.Params.indentifer }}
+        {{ $currentPage := .Page.Params.indentifer | relURL }}
         {{ range .Site.Menus.main_menu }}
-          <li class="{{ if eq .URL $currentPage }} active{{ end }}">
-            <a href="{{ .URL }}">
+
+        {{ $menuURL := .URL | relURL }}
+
+          <li class="{{ if eq $menuURL $currentPage }} active{{ end }}">
+            <a href="{{ .URL | relURL }}">
               <span>
                 <i class="fa-light fa-address-card"></i>
               </span>
