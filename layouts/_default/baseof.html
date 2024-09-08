@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="description" content="" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+      
+      <title>
+         {{ .Site.Title }} | {{ if .Page.Title }}{{ .Page.Title }}{{ end }}
+      </title>
+      
+      <link rel="shortcut icon" type="image/x-icon" href="/hugo-my-portfolio/assets/img/favicon.png">
+      <link rel="stylesheet" href="/hugo-my-portfolio/assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/hugo-my-portfolio/assets/css/animate.min.css">
+      <link rel="stylesheet" href="/hugo-my-portfolio/assets/css/fontawesome.min.css">
+      <link rel="stylesheet" href="/hugo-my-portfolio/assets/css/all.min.css">
+      <link rel="stylesheet" href="/hugo-my-portfolio/assets/css/odometer.min.css">
+      <link rel="stylesheet" href="/hugo-my-portfolio/assets/css/jquery.modal.min.css">
+      <link rel="stylesheet" href="/hugo-my-portfolio/assets/css/meanmenu.css">
+      <link rel="stylesheet" href="/hugo-my-portfolio/assets/css/swipper.css">
+      <link rel="stylesheet" href="/hugo-my-portfolio/assets/css/main.css">
+
+   </head>
+
+   <body>
+      <!-- data-background="/hugo-my-portfolio/assets/img/bg/page-bg-1.jpg" -->
+      <div class="page-wrapper home-1" style="background-color: #c6c6c630">
+      
+         {{ partial "header.html" . }}
+         {{ block "main" . }}
+         {{ end }}
+
+      </div>
+
+      <script src="/hugo-my-portfolio/assets/js/jquery.min.js"></script>
+      <script src="/hugo-my-portfolio/assets/js/bootstrap.bundle.min.js"></script>
+      <script src="/hugo-my-portfolio/assets/js/swipper-bundle.min.js"></script>
+      <script src="/hugo-my-portfolio/assets/js/jquery.meanmenu.min.js"></script>
+      <script src="/hugo-my-portfolio/assets/js/wow.min.js"></script>
+      <script src="/hugo-my-portfolio/assets/js/isotope.pkgd.min.js"></script>
+      <script src="/hugo-my-portfolio/assets/js/odometer.min.js"></script>
+      <script src="/hugo-my-portfolio/assets/js/jquery.modal.min.js"></script>
+      <script src="/hugo-my-portfolio/assets/js/appear.min.js"></script>
+      <script src="/hugo-my-portfolio/assets/js/main.js"></script>
+   </body>
+</html>

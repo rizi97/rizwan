@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.3"
+  },
+  "scripts": {
+    "build-tw": "npx tailwindcss -i static/hugo-my-portfolio/assets/main.css -o static/hugo-my-portfolio/assets/custom.css",
+    "watch-tw": "npx tailwindcss -i static/hugo-my-portfolio/assets/main.css -o static/hugo-my-portfolio/assets/custom.css -w --minify"
+  }
+}

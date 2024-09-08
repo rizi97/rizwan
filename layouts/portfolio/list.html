@@ -1,0 +1,117 @@
+{{ define "main" }}
+
+<div class="container z-index-3">
+  <div class="row">
+    {{ partial "left_sidebar.html" . }}
+
+    <!-- resume-page-start -->
+    <div class="col-xxl-8 col-xl-9">
+      <div class="bostami-page-content-wrap">
+        <!-- page title -->
+        <div class="section-wrapper pl-60 pr-60 pt-60">
+          <div class="bostami-page-title-wrap mb-15">
+            <h2 class="page-title">{{ .Title }}</h2>
+          </div>
+        </div>
+
+        <div class="section-wrapper pr-60 pl-60 mb-60">
+          <div class="row">
+            {{ partial "portfolio_filters.html" . }}
+
+            <div class="post-list">
+              {{ $sectionName := .Params.section }} {{ $section := .Site.GetPage
+              "section" $sectionName }} {{ $posts := $section.Pages }}
+              <!-- <p>Found {{ len $posts }} posts</p> -->
+
+              {{ $paginator := .Paginate $posts }}
+              <!-- <p>Current Page: {{ $paginator.PageNumber }}</p>
+              <p>Pages: {{ $paginator.TotalPages }}</p> -->
+
+              <div class="col-12">
+                <div id="fillter-item-active" class='fillter-item-wrap category-specific 
+                  {{ if eq $sectionName "portfolio/wordpress" }} wp 
+                  {{ else if eq $sectionName "portfolio/shopify" }} shopify
+                  {{ else if eq $sectionName "portfolio/hugo" }} hugo
+                  {{ else }} other {{ end }}'>
+                  <div class="grid-sizer"></div>
+                  {{ range $index, $page := $paginator.Pages }}
+
+                  {{ $prinkIndices := slice 0 3 4 7 8 11 12 15 16 19 20 }}  
+                  {{ $bgClass := "" }}  
+
+                  {{ if in $prinkIndices $index }}
+                    {{ $bgClass = "bg-prink" }}
+                  {{ else }}
+                    {{ $bgClass = "bg-catkrill" }}
+                  {{ end }}
+
+                  <div class="isotop-item">
+                    <div
+                      class="fillter-item specific {{ $bgClass }}"
+                    >
+                      <a class="img" href="{{ $page.Params.link }}">
+                        <img
+                          src="{{ $page.Params.image }}"
+                          alt="{{ $page.Title }}"
+                        />
+                      </a>
+                      <h6 class="item-title text-center">
+                        <a href="#">{{ $page.Title }}</a>
+                      </h6>
+                    </div>
+                  </div>
+
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination Links -->
+            <div class="pagination">
+              {{ if $paginator.HasPrev }}
+              <a href="{{ $paginator.Prev.URL }}">Previous</a>
+              {{ end }} {{ range $paginator.Pagers }} {{ end }} {{ if
+              $paginator.HasNext }}
+              <a href="{{ $paginator.Next.URL }}">Next</a>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+
+        <!-- footer copyright -->
+        {{ partial "footer.html" . }}
+      </div>
+    </div>
+    <!-- resume-page-end -->
+
+    {{ partial "right_sidebar.html" . }}
+  </div>
+</div>
+
+<!-- portfolio-modal-start -->
+<div class="modal portfolio-modal-box fade">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-bs-dismiss="modal">
+          <i class="far fa-times"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <h6 class="blog-title"></h6>
+
+        <!-- <div class="h1-modal-paragraph">
+          <p>testing</p>
+        </div> -->
+
+        <div class="h1-modal-img">
+          <img src="/hugo-my-portfolio/assets/img/work/portfolio-modal-img-1.jpg" alt="" class="w-100" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- portfolio-modal-end -->
+
+{{ end }}

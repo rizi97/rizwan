@@ -1,0 +1,28 @@
+baseURL = "https://rizi97.github.io/hugo-my-portfolio/"
+title = 'Rizwan Portfolio'
+
+publishDir = "docs"
+
+## paginate = 1
+
+[menu]
+[[menu.main_menu]]
+  name = 'About'
+  url = '/'
+  weight = '1'
+[[menu.main_menu]]
+  name = 'Resume'
+  url = '/resume'
+  weight = '2'
+[[menu.main_menu]]
+  name = 'Works'
+  url = '/portfolio'
+  weight = '3'
+[[menu.main_menu]]
+  name = 'Contact'
+  url = '/contact'
+  weight = '4'
+
+
+[Params]
+siteLogo = "/hugo-my-portfolio/assets/img/logo/logo-2.png"

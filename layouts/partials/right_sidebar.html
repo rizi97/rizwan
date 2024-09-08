@@ -1,0 +1,23 @@
+<!-- main-menu-start -->
+<div class="col-xxl-1 d-xxl-block d-none">
+  <div class="bostami-main-menu-wrap">
+    <nav class="bastami-main-menu main_menu">
+      <ul>
+
+        {{ $currentPage := .Page.Params.indentifer }}
+        {{ range .Site.Menus.main_menu }}
+          <li class="{{ if eq .URL $currentPage }} active{{ end }}">
+            <a href="{{ .URL }}">
+              <span>
+                <i class="fa-light fa-address-card"></i>
+              </span>
+              {{ .Name }}
+            </a>
+          </li>
+        {{ end }}
+        
+      </ul>
+    </nav>
+  </div>
+</div>
+<!-- main-menu-end -->
