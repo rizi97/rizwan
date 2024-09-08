@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portfolio: Shopify on Rizwan Portfolio</title>
+    <link>http://localhost:1313/rizwan-portfolio/work/shopify/</link>
+    <description>Recent content in Portfolio: Shopify on Rizwan Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 31 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/rizwan-portfolio/work/shopify/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>KombuDrink</title>
+      <link>http://localhost:1313/rizwan-portfolio/work/shopify/kombudrink/</link>
+      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rizwan-portfolio/work/shopify/kombudrink/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Organics Care Crow</title>
+      <link>http://localhost:1313/rizwan-portfolio/work/shopify/organicscarecrow/</link>
+      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rizwan-portfolio/work/shopify/organicscarecrow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wood Stock Resources</title>
+      <link>http://localhost:1313/rizwan-portfolio/work/shopify/woodstockresources/</link>
+      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rizwan-portfolio/work/shopify/woodstockresources/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Organic Delivery Sydney</title>
+      <link>http://localhost:1313/rizwan-portfolio/work/shopify/organicdeliverysydney/</link>
+      <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rizwan-portfolio/work/shopify/organicdeliverysydney/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Italian Shoes</title>
+      <link>http://localhost:1313/rizwan-portfolio/work/shopify/italianshoes/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rizwan-portfolio/work/shopify/italianshoes/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

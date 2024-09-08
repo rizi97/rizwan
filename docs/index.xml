@@ -10,100 +10,100 @@
     <atom:link href="http://localhost:1313/rizwan-portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TegMade</title>
-      <link>http://localhost:1313/rizwan-portfolio/portfolio/wordpress/tegmade/</link>
+      <link>http://localhost:1313/rizwan-portfolio/work/wordpress/tegmade/</link>
       <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/portfolio/wordpress/tegmade/</guid>
+      <guid>http://localhost:1313/rizwan-portfolio/work/wordpress/tegmade/</guid>
       <description></description>
     </item>
     <item>
       <title>WorldFirst</title>
-      <link>http://localhost:1313/rizwan-portfolio/portfolio/wordpress/worldfirst/</link>
+      <link>http://localhost:1313/rizwan-portfolio/work/wordpress/worldfirst/</link>
       <pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/portfolio/wordpress/worldfirst/</guid>
+      <guid>http://localhost:1313/rizwan-portfolio/work/wordpress/worldfirst/</guid>
       <description></description>
     </item>
     <item>
       <title>CitrusBits</title>
-      <link>http://localhost:1313/rizwan-portfolio/portfolio/wordpress/citrusbits/</link>
+      <link>http://localhost:1313/rizwan-portfolio/work/wordpress/citrusbits/</link>
       <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/portfolio/wordpress/citrusbits/</guid>
+      <guid>http://localhost:1313/rizwan-portfolio/work/wordpress/citrusbits/</guid>
       <description></description>
     </item>
     <item>
       <title>KombuDrink</title>
-      <link>http://localhost:1313/rizwan-portfolio/portfolio/shopify/kombudrink/</link>
+      <link>http://localhost:1313/rizwan-portfolio/work/shopify/kombudrink/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/portfolio/shopify/kombudrink/</guid>
+      <guid>http://localhost:1313/rizwan-portfolio/work/shopify/kombudrink/</guid>
       <description></description>
     </item>
     <item>
       <title>Organics Care Crow</title>
-      <link>http://localhost:1313/rizwan-portfolio/portfolio/shopify/organicscarecrow/</link>
+      <link>http://localhost:1313/rizwan-portfolio/work/shopify/organicscarecrow/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/portfolio/shopify/organicscarecrow/</guid>
+      <guid>http://localhost:1313/rizwan-portfolio/work/shopify/organicscarecrow/</guid>
       <description></description>
     </item>
     <item>
       <title>Wood Stock Resources</title>
-      <link>http://localhost:1313/rizwan-portfolio/portfolio/shopify/woodstockresources/</link>
+      <link>http://localhost:1313/rizwan-portfolio/work/shopify/woodstockresources/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/portfolio/shopify/woodstockresources/</guid>
+      <guid>http://localhost:1313/rizwan-portfolio/work/shopify/woodstockresources/</guid>
       <description></description>
     </item>
     <item>
       <title>Organic Delivery Sydney</title>
-      <link>http://localhost:1313/rizwan-portfolio/portfolio/shopify/organicdeliverysydney/</link>
+      <link>http://localhost:1313/rizwan-portfolio/work/shopify/organicdeliverysydney/</link>
       <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/portfolio/shopify/organicdeliverysydney/</guid>
+      <guid>http://localhost:1313/rizwan-portfolio/work/shopify/organicdeliverysydney/</guid>
       <description></description>
     </item>
     <item>
       <title>Aish - Blogging Site</title>
-      <link>http://localhost:1313/rizwan-portfolio/portfolio/wordpress/aish/</link>
+      <link>http://localhost:1313/rizwan-portfolio/work/wordpress/aish/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/portfolio/wordpress/aish/</guid>
+      <guid>http://localhost:1313/rizwan-portfolio/work/wordpress/aish/</guid>
       <description></description>
     </item>
     <item>
       <title>GritDaily</title>
-      <link>http://localhost:1313/rizwan-portfolio/portfolio/wordpress/gritdaily/</link>
+      <link>http://localhost:1313/rizwan-portfolio/work/wordpress/gritdaily/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/portfolio/wordpress/gritdaily/</guid>
+      <guid>http://localhost:1313/rizwan-portfolio/work/wordpress/gritdaily/</guid>
       <description></description>
     </item>
     <item>
       <title>Italian Shoes</title>
-      <link>http://localhost:1313/rizwan-portfolio/portfolio/shopify/italianshoes/</link>
+      <link>http://localhost:1313/rizwan-portfolio/work/shopify/italianshoes/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/portfolio/shopify/italianshoes/</guid>
+      <guid>http://localhost:1313/rizwan-portfolio/work/shopify/italianshoes/</guid>
       <description></description>
     </item>
     <item>
       <title>WomenLoveTech</title>
-      <link>http://localhost:1313/rizwan-portfolio/portfolio/wordpress/womenlovetech/</link>
+      <link>http://localhost:1313/rizwan-portfolio/work/wordpress/womenlovetech/</link>
       <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/portfolio/wordpress/womenlovetech/</guid>
+      <guid>http://localhost:1313/rizwan-portfolio/work/wordpress/womenlovetech/</guid>
       <description></description>
     </item>
     <item>
       <title>TheCarousel</title>
-      <link>http://localhost:1313/rizwan-portfolio/portfolio/wordpress/thecarousel/</link>
+      <link>http://localhost:1313/rizwan-portfolio/work/wordpress/thecarousel/</link>
       <pubDate>Tue, 27 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/portfolio/wordpress/thecarousel/</guid>
+      <guid>http://localhost:1313/rizwan-portfolio/work/wordpress/thecarousel/</guid>
       <description></description>
     </item>
     <item>
       <title>MudAustrlia</title>
-      <link>http://localhost:1313/rizwan-portfolio/portfolio/wordpress/mudaustralia/</link>
+      <link>http://localhost:1313/rizwan-portfolio/work/wordpress/mudaustralia/</link>
       <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/portfolio/wordpress/mudaustralia/</guid>
+      <guid>http://localhost:1313/rizwan-portfolio/work/wordpress/mudaustralia/</guid>
       <description></description>
     </item>
     <item>
       <title>City of Flowers NYC</title>
-      <link>http://localhost:1313/rizwan-portfolio/portfolio/wordpress/cityofflowersnyc/</link>
+      <link>http://localhost:1313/rizwan-portfolio/work/wordpress/cityofflowersnyc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/portfolio/wordpress/cityofflowersnyc/</guid>
+      <guid>http://localhost:1313/rizwan-portfolio/work/wordpress/cityofflowersnyc/</guid>
       <description></description>
     </item>
     <item>
@@ -115,9 +115,9 @@
     </item>
     <item>
       <title>Portfolio Category</title>
-      <link>http://localhost:1313/rizwan-portfolio/portfolio/</link>
+      <link>http://localhost:1313/rizwan-portfolio/work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/portfolio/</guid>
+      <guid>http://localhost:1313/rizwan-portfolio/work/</guid>
       <description></description>
     </item>
     <item>
@@ -129,16 +129,16 @@
     </item>
     <item>
       <title>TopCity</title>
-      <link>http://localhost:1313/rizwan-portfolio/portfolio/hugo/topcity/</link>
+      <link>http://localhost:1313/rizwan-portfolio/work/hugo/topcity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/portfolio/hugo/topcity/</guid>
+      <guid>http://localhost:1313/rizwan-portfolio/work/hugo/topcity/</guid>
       <description></description>
     </item>
     <item>
       <title>TopCity 1</title>
-      <link>http://localhost:1313/rizwan-portfolio/portfolio/hugo/topcity1/</link>
+      <link>http://localhost:1313/rizwan-portfolio/work/hugo/topcity1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/portfolio/hugo/topcity1/</guid>
+      <guid>http://localhost:1313/rizwan-portfolio/work/hugo/topcity1/</guid>
       <description></description>
     </item>
   </channel>
