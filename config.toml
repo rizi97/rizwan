@@ -1,5 +1,5 @@
-##baseURL = "https://rizi97.github.io/hugo-my-portfolio/"
-baseURL = "/"
+baseURL = "https://rizi97.github.io/hugo-my-portfolio/"
+## baseURL = "/"
 title = 'Rizwan Portfolio'
  
 publishDir = "docs"
