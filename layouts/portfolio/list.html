@@ -45,11 +45,11 @@
                     {{ $bgClass = "bg-catkrill" }}
                   {{ end }}
 
-                  <div class="isotop-item">
+                  <div class="isotop-item"> 
                     <div
                       class="fillter-item specific {{ $bgClass }}"
                     >
-                      <a class="img" href="{{ $page.Params.link | relURL }}">
+                      <a class="img" href="{{ $page.Params.link }}">
                         <img
                           src="{{ $page.Params.image | relURL }}"
                           alt="{{ $page.Title }}"
