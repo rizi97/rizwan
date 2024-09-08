@@ -2,143 +2,143 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Rizwan Portfolio</title>
-    <link>http://localhost:1313/hugo-my-portfolio/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content in About on Rizwan Portfolio</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 06 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/hugo-my-portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TegMade</title>
-      <link>http://localhost:1313/hugo-my-portfolio/portfolio/wordpress/tegmade/</link>
+      <link>//localhost:1313/portfolio/wordpress/tegmade/</link>
       <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-my-portfolio/portfolio/wordpress/tegmade/</guid>
+      <guid>//localhost:1313/portfolio/wordpress/tegmade/</guid>
       <description></description>
     </item>
     <item>
       <title>WorldFirst</title>
-      <link>http://localhost:1313/hugo-my-portfolio/portfolio/wordpress/worldfirst/</link>
+      <link>//localhost:1313/portfolio/wordpress/worldfirst/</link>
       <pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-my-portfolio/portfolio/wordpress/worldfirst/</guid>
+      <guid>//localhost:1313/portfolio/wordpress/worldfirst/</guid>
       <description></description>
     </item>
     <item>
       <title>CitrusBits</title>
-      <link>http://localhost:1313/hugo-my-portfolio/portfolio/wordpress/citrusbits/</link>
+      <link>//localhost:1313/portfolio/wordpress/citrusbits/</link>
       <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-my-portfolio/portfolio/wordpress/citrusbits/</guid>
+      <guid>//localhost:1313/portfolio/wordpress/citrusbits/</guid>
       <description></description>
     </item>
     <item>
       <title>KombuDrink</title>
-      <link>http://localhost:1313/hugo-my-portfolio/portfolio/shopify/kombudrink/</link>
+      <link>//localhost:1313/portfolio/shopify/kombudrink/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-my-portfolio/portfolio/shopify/kombudrink/</guid>
+      <guid>//localhost:1313/portfolio/shopify/kombudrink/</guid>
       <description></description>
     </item>
     <item>
       <title>Organics Care Crow</title>
-      <link>http://localhost:1313/hugo-my-portfolio/portfolio/shopify/organicscarecrow/</link>
+      <link>//localhost:1313/portfolio/shopify/organicscarecrow/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-my-portfolio/portfolio/shopify/organicscarecrow/</guid>
+      <guid>//localhost:1313/portfolio/shopify/organicscarecrow/</guid>
       <description></description>
     </item>
     <item>
       <title>Wood Stock Resources</title>
-      <link>http://localhost:1313/hugo-my-portfolio/portfolio/shopify/woodstockresources/</link>
+      <link>//localhost:1313/portfolio/shopify/woodstockresources/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-my-portfolio/portfolio/shopify/woodstockresources/</guid>
+      <guid>//localhost:1313/portfolio/shopify/woodstockresources/</guid>
       <description></description>
     </item>
     <item>
       <title>Organic Delivery Sydney</title>
-      <link>http://localhost:1313/hugo-my-portfolio/portfolio/shopify/organicdeliverysydney/</link>
+      <link>//localhost:1313/portfolio/shopify/organicdeliverysydney/</link>
       <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-my-portfolio/portfolio/shopify/organicdeliverysydney/</guid>
+      <guid>//localhost:1313/portfolio/shopify/organicdeliverysydney/</guid>
       <description></description>
     </item>
     <item>
       <title>Aish - Blogging Site</title>
-      <link>http://localhost:1313/hugo-my-portfolio/portfolio/wordpress/aish/</link>
+      <link>//localhost:1313/portfolio/wordpress/aish/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-my-portfolio/portfolio/wordpress/aish/</guid>
+      <guid>//localhost:1313/portfolio/wordpress/aish/</guid>
       <description></description>
     </item>
     <item>
       <title>GritDaily</title>
-      <link>http://localhost:1313/hugo-my-portfolio/portfolio/wordpress/gritdaily/</link>
+      <link>//localhost:1313/portfolio/wordpress/gritdaily/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-my-portfolio/portfolio/wordpress/gritdaily/</guid>
+      <guid>//localhost:1313/portfolio/wordpress/gritdaily/</guid>
       <description></description>
     </item>
     <item>
       <title>Italian Shoes</title>
-      <link>http://localhost:1313/hugo-my-portfolio/portfolio/shopify/italianshoes/</link>
+      <link>//localhost:1313/portfolio/shopify/italianshoes/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-my-portfolio/portfolio/shopify/italianshoes/</guid>
+      <guid>//localhost:1313/portfolio/shopify/italianshoes/</guid>
       <description></description>
     </item>
     <item>
       <title>WomenLoveTech</title>
-      <link>http://localhost:1313/hugo-my-portfolio/portfolio/wordpress/womenlovetech/</link>
+      <link>//localhost:1313/portfolio/wordpress/womenlovetech/</link>
       <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-my-portfolio/portfolio/wordpress/womenlovetech/</guid>
+      <guid>//localhost:1313/portfolio/wordpress/womenlovetech/</guid>
       <description></description>
     </item>
     <item>
       <title>TheCarousel</title>
-      <link>http://localhost:1313/hugo-my-portfolio/portfolio/wordpress/thecarousel/</link>
+      <link>//localhost:1313/portfolio/wordpress/thecarousel/</link>
       <pubDate>Tue, 27 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-my-portfolio/portfolio/wordpress/thecarousel/</guid>
+      <guid>//localhost:1313/portfolio/wordpress/thecarousel/</guid>
       <description></description>
     </item>
     <item>
       <title>MudAustrlia</title>
-      <link>http://localhost:1313/hugo-my-portfolio/portfolio/wordpress/mudaustralia/</link>
+      <link>//localhost:1313/portfolio/wordpress/mudaustralia/</link>
       <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-my-portfolio/portfolio/wordpress/mudaustralia/</guid>
+      <guid>//localhost:1313/portfolio/wordpress/mudaustralia/</guid>
       <description></description>
     </item>
     <item>
       <title>City of Flowers NYC</title>
-      <link>http://localhost:1313/hugo-my-portfolio/portfolio/wordpress/cityofflowersnyc/</link>
+      <link>//localhost:1313/portfolio/wordpress/cityofflowersnyc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-my-portfolio/portfolio/wordpress/cityofflowersnyc/</guid>
+      <guid>//localhost:1313/portfolio/wordpress/cityofflowersnyc/</guid>
       <description></description>
     </item>
     <item>
       <title>Contact</title>
-      <link>http://localhost:1313/hugo-my-portfolio/contact/</link>
+      <link>//localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-my-portfolio/contact/</guid>
+      <guid>//localhost:1313/contact/</guid>
       <description></description>
     </item>
     <item>
       <title>Portfolio Category</title>
-      <link>http://localhost:1313/hugo-my-portfolio/portfolio/</link>
+      <link>//localhost:1313/portfolio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-my-portfolio/portfolio/</guid>
+      <guid>//localhost:1313/portfolio/</guid>
       <description></description>
     </item>
     <item>
       <title>Resume</title>
-      <link>http://localhost:1313/hugo-my-portfolio/resume/</link>
+      <link>//localhost:1313/resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-my-portfolio/resume/</guid>
+      <guid>//localhost:1313/resume/</guid>
       <description></description>
     </item>
     <item>
       <title>TopCity</title>
-      <link>http://localhost:1313/hugo-my-portfolio/portfolio/hugo/topcity/</link>
+      <link>//localhost:1313/portfolio/hugo/topcity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-my-portfolio/portfolio/hugo/topcity/</guid>
+      <guid>//localhost:1313/portfolio/hugo/topcity/</guid>
       <description></description>
     </item>
     <item>
       <title>TopCity 1</title>
-      <link>http://localhost:1313/hugo-my-portfolio/portfolio/hugo/topcity1/</link>
+      <link>//localhost:1313/portfolio/hugo/topcity1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugo-my-portfolio/portfolio/hugo/topcity1/</guid>
+      <guid>//localhost:1313/portfolio/hugo/topcity1/</guid>
       <description></description>
     </item>
   </channel>
