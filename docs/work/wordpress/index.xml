@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Portfolio: WordPress on Rizwan Portfolio</title>
-    <link>http://localhost:1313/rizwan-portfolio/work/wordpress/</link>
+    <link>http://localhost:1313/rizwan/work/wordpress/</link>
     <description>Recent content in Portfolio: WordPress on Rizwan Portfolio</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 06 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/rizwan-portfolio/work/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/rizwan/work/wordpress/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TegMade</title>
-      <link>http://localhost:1313/rizwan-portfolio/work/wordpress/tegmade/</link>
+      <link>http://localhost:1313/rizwan/work/wordpress/tegmade/</link>
       <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/work/wordpress/tegmade/</guid>
+      <guid>http://localhost:1313/rizwan/work/wordpress/tegmade/</guid>
       <description></description>
     </item>
     <item>
       <title>WorldFirst</title>
-      <link>http://localhost:1313/rizwan-portfolio/work/wordpress/worldfirst/</link>
+      <link>http://localhost:1313/rizwan/work/wordpress/worldfirst/</link>
       <pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/work/wordpress/worldfirst/</guid>
+      <guid>http://localhost:1313/rizwan/work/wordpress/worldfirst/</guid>
       <description></description>
     </item>
     <item>
       <title>CitrusBits</title>
-      <link>http://localhost:1313/rizwan-portfolio/work/wordpress/citrusbits/</link>
+      <link>http://localhost:1313/rizwan/work/wordpress/citrusbits/</link>
       <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/work/wordpress/citrusbits/</guid>
+      <guid>http://localhost:1313/rizwan/work/wordpress/citrusbits/</guid>
       <description></description>
     </item>
     <item>
       <title>Aish - Blogging Site</title>
-      <link>http://localhost:1313/rizwan-portfolio/work/wordpress/aish/</link>
+      <link>http://localhost:1313/rizwan/work/wordpress/aish/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/work/wordpress/aish/</guid>
+      <guid>http://localhost:1313/rizwan/work/wordpress/aish/</guid>
       <description></description>
     </item>
     <item>
       <title>GritDaily</title>
-      <link>http://localhost:1313/rizwan-portfolio/work/wordpress/gritdaily/</link>
+      <link>http://localhost:1313/rizwan/work/wordpress/gritdaily/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/work/wordpress/gritdaily/</guid>
+      <guid>http://localhost:1313/rizwan/work/wordpress/gritdaily/</guid>
       <description></description>
     </item>
     <item>
       <title>WomenLoveTech</title>
-      <link>http://localhost:1313/rizwan-portfolio/work/wordpress/womenlovetech/</link>
+      <link>http://localhost:1313/rizwan/work/wordpress/womenlovetech/</link>
       <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/work/wordpress/womenlovetech/</guid>
+      <guid>http://localhost:1313/rizwan/work/wordpress/womenlovetech/</guid>
       <description></description>
     </item>
     <item>
       <title>TheCarousel</title>
-      <link>http://localhost:1313/rizwan-portfolio/work/wordpress/thecarousel/</link>
+      <link>http://localhost:1313/rizwan/work/wordpress/thecarousel/</link>
       <pubDate>Tue, 27 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/work/wordpress/thecarousel/</guid>
+      <guid>http://localhost:1313/rizwan/work/wordpress/thecarousel/</guid>
       <description></description>
     </item>
     <item>
       <title>MudAustrlia</title>
-      <link>http://localhost:1313/rizwan-portfolio/work/wordpress/mudaustralia/</link>
+      <link>http://localhost:1313/rizwan/work/wordpress/mudaustralia/</link>
       <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/work/wordpress/mudaustralia/</guid>
+      <guid>http://localhost:1313/rizwan/work/wordpress/mudaustralia/</guid>
       <description></description>
     </item>
     <item>
       <title>City of Flowers NYC</title>
-      <link>http://localhost:1313/rizwan-portfolio/work/wordpress/cityofflowersnyc/</link>
+      <link>http://localhost:1313/rizwan/work/wordpress/cityofflowersnyc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan-portfolio/work/wordpress/cityofflowersnyc/</guid>
+      <guid>http://localhost:1313/rizwan/work/wordpress/cityofflowersnyc/</guid>
       <description></description>
     </item>
   </channel>
