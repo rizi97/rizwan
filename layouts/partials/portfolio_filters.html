@@ -1,8 +1,8 @@
 <div class="col-12">
     <ul class="fillter-btn-wrap buttonGroup isotop-menu-wrapper mb-30">
-        <li class="fillter-btn"><a href="/portfolio">All</a></li>
-        <li class='fillter-btn {{ if eq .RelPermalink "/portfolio/wordpress/" }}is-checked{{ end }}'><a href="/portfolio/wordpress">WordPress</a></li>
-        <li class='fillter-btn {{ if eq .RelPermalink "/portfolio/shopify/" }}is-checked{{ end }}'><a href="/portfolio/shopify">Shopify</a></li>
-        <li class='fillter-btn {{ if eq .RelPermalink "/portfolio/hugo/" }}is-checked{{ end }}'><a href="/portfolio/hugo">Hugo</a></li>
+        <li class="fillter-btn"><a href='{{ "portfolio" | relURL }}'>All</a></li>
+        <li class='fillter-btn {{ if eq .RelPermalink ( "portfolio/wordpress/" | relURL ) }}is-checked{{ end }}'><a href='{{ "portfolio/wordpress" | relURL }}'>WordPress</a></li>
+        <li class='fillter-btn {{ if eq .RelPermalink ( "portfolio/shopify/" | relURL ) }}is-checked{{ end }}'><a href='{{ "portfolio/shopify" | relURL }}'>Shopify</a></li>
+        <li class='fillter-btn {{ if eq .RelPermalink ( "portfolio/hugo/" | relURL ) }}is-checked{{ end }}'><a href='{{ "portfolio/hugo" | relURL }}'>Hugo</a></li>
     </ul>
 </div>

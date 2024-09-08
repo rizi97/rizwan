@@ -1,7 +1,7 @@
 ---
 layout: portfolio
 title: Portfolio Category
-indentifer: /portfolio
+indentifer: portfolio
 category_list:
     - item:
         title: WordPress
