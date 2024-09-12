@@ -16,7 +16,7 @@
       <description></description>
     </item>
     <item>
-      <title>WorldFirst</title>
+      <title>WorldFirst - Alibaba</title>
       <link>http://localhost:1313/rizwan/work/wordpress/worldfirst/</link>
       <pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/rizwan/work/wordpress/worldfirst/</guid>
@@ -79,21 +79,21 @@
       <description></description>
     </item>
     <item>
-      <title>WomenLoveTech</title>
+      <title>Ciklum</title>
       <link>http://localhost:1313/rizwan/work/wordpress/ciklum/</link>
       <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/rizwan/work/wordpress/ciklum/</guid>
       <description></description>
     </item>
     <item>
-      <title>WomenLoveTech</title>
+      <title>WomenLoveTech - News</title>
       <link>http://localhost:1313/rizwan/work/wordpress/womenlovetech/</link>
       <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/rizwan/work/wordpress/womenlovetech/</guid>
       <description></description>
     </item>
     <item>
-      <title>TheCarousel</title>
+      <title>TheCarousel - News</title>
       <link>http://localhost:1313/rizwan/work/wordpress/thecarousel/</link>
       <pubDate>Tue, 27 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/rizwan/work/wordpress/thecarousel/</guid>
@@ -107,7 +107,7 @@
       <description></description>
     </item>
     <item>
-      <title>AbleMkr</title>
+      <title>AbleMkr - Construction</title>
       <link>http://localhost:1313/rizwan/work/wordpress/ablemkr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/rizwan/work/wordpress/ablemkr/</guid>
@@ -146,20 +146,6 @@
       <link>http://localhost:1313/rizwan/resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/rizwan/resume/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>TopCity</title>
-      <link>http://localhost:1313/rizwan/work/hugo/topcity/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan/work/hugo/topcity/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>TopCity 1</title>
-      <link>http://localhost:1313/rizwan/work/hugo/topcity1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan/work/hugo/topcity1/</guid>
       <description></description>
     </item>
   </channel>
