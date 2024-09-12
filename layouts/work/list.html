@@ -69,12 +69,12 @@
             </div>
 
             <!-- Pagination Links -->
-            <div class="pagination">
+            <div class="pagination justify-content-center mt-10 pagination px-4">
               {{ if $paginator.HasPrev }}
-              <a href="{{ $paginator.Prev.URL }}">Previous</a>
+              <a href="{{ $paginator.Prev.URL }}" class="btn-2 py-2">Previous</a>
               {{ end }} {{ range $paginator.Pagers }} {{ end }} {{ if
               $paginator.HasNext }}
-              <a href="{{ $paginator.Next.URL }}">Next</a>
+              <a href="{{ $paginator.Next.URL }}" class="btn-2 py-2">Next</a>
               {{ end }}
             </div>
           </div>

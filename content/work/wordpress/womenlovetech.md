@@ -1,6 +1,6 @@
 ---
 layout: single
-title: WomenLoveTech
+title: WomenLoveTech - News
 indentifer: work
 image: assets/img/portfolio/wordpress/womenlovetech.webp
 link: womenlovetech.com

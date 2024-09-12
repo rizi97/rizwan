@@ -16,7 +16,7 @@
       <description></description>
     </item>
     <item>
-      <title>WorldFirst</title>
+      <title>WorldFirst - Alibaba</title>
       <link>http://localhost:1313/rizwan/work/wordpress/worldfirst/</link>
       <pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/rizwan/work/wordpress/worldfirst/</guid>
@@ -37,31 +37,45 @@
       <description></description>
     </item>
     <item>
-      <title>GritDaily</title>
-      <link>http://localhost:1313/rizwan/work/wordpress/gritdaily/</link>
+      <title>MudAustrlia</title>
+      <link>http://localhost:1313/rizwan/work/wordpress/mudaustralia/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan/work/wordpress/gritdaily/</guid>
+      <guid>http://localhost:1313/rizwan/work/wordpress/mudaustralia/</guid>
       <description></description>
     </item>
     <item>
-      <title>WomenLoveTech</title>
+      <title>Ciklum</title>
+      <link>http://localhost:1313/rizwan/work/wordpress/ciklum/</link>
+      <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rizwan/work/wordpress/ciklum/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>WomenLoveTech - News</title>
       <link>http://localhost:1313/rizwan/work/wordpress/womenlovetech/</link>
       <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/rizwan/work/wordpress/womenlovetech/</guid>
       <description></description>
     </item>
     <item>
-      <title>TheCarousel</title>
+      <title>TheCarousel - News</title>
       <link>http://localhost:1313/rizwan/work/wordpress/thecarousel/</link>
       <pubDate>Tue, 27 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/rizwan/work/wordpress/thecarousel/</guid>
       <description></description>
     </item>
     <item>
-      <title>MudAustrlia</title>
-      <link>http://localhost:1313/rizwan/work/wordpress/mudaustralia/</link>
+      <title>GritDaily</title>
+      <link>http://localhost:1313/rizwan/work/wordpress/gritdaily/</link>
       <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan/work/wordpress/mudaustralia/</guid>
+      <guid>http://localhost:1313/rizwan/work/wordpress/gritdaily/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AbleMkr - Construction</title>
+      <link>http://localhost:1313/rizwan/work/wordpress/ablemkr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rizwan/work/wordpress/ablemkr/</guid>
       <description></description>
     </item>
     <item>
@@ -69,6 +83,13 @@
       <link>http://localhost:1313/rizwan/work/wordpress/cityofflowersnyc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/rizwan/work/wordpress/cityofflowersnyc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prima Metrics</title>
+      <link>http://localhost:1313/rizwan/work/wordpress/primametrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rizwan/work/wordpress/primametrics/</guid>
       <description></description>
     </item>
   </channel>

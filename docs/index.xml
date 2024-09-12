@@ -65,17 +65,24 @@
       <description></description>
     </item>
     <item>
-      <title>GritDaily</title>
-      <link>http://localhost:1313/rizwan/work/wordpress/gritdaily/</link>
-      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan/work/wordpress/gritdaily/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Italian Shoes</title>
       <link>http://localhost:1313/rizwan/work/shopify/italianshoes/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/rizwan/work/shopify/italianshoes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MudAustrlia</title>
+      <link>http://localhost:1313/rizwan/work/wordpress/mudaustralia/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rizwan/work/wordpress/mudaustralia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>WomenLoveTech</title>
+      <link>http://localhost:1313/rizwan/work/wordpress/ciklum/</link>
+      <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rizwan/work/wordpress/ciklum/</guid>
       <description></description>
     </item>
     <item>
@@ -93,10 +100,17 @@
       <description></description>
     </item>
     <item>
-      <title>MudAustrlia</title>
-      <link>http://localhost:1313/rizwan/work/wordpress/mudaustralia/</link>
+      <title>GritDaily</title>
+      <link>http://localhost:1313/rizwan/work/wordpress/gritdaily/</link>
       <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rizwan/work/wordpress/mudaustralia/</guid>
+      <guid>http://localhost:1313/rizwan/work/wordpress/gritdaily/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AbleMkr</title>
+      <link>http://localhost:1313/rizwan/work/wordpress/ablemkr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rizwan/work/wordpress/ablemkr/</guid>
       <description></description>
     </item>
     <item>
@@ -118,6 +132,13 @@
       <link>http://localhost:1313/rizwan/work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/rizwan/work/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prima Metrics</title>
+      <link>http://localhost:1313/rizwan/work/wordpress/primametrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rizwan/work/wordpress/primametrics/</guid>
       <description></description>
     </item>
     <item>

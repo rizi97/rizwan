@@ -1,6 +1,6 @@
 ---
 layout: single
-title: TheCarousel
+title: TheCarousel - News
 indentifer: work
 image: assets/img/portfolio/wordpress/thecarousel.webp
 link: thecarousel.com
