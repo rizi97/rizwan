@@ -106,5 +106,12 @@
       <guid>http://localhost:1313/rizwan/work/wordpress/phase/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Children School</title>
+      <link>http://localhost:1313/rizwan/work/wordpress/phasepreschool/</link>
+      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rizwan/work/wordpress/phasepreschool/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
