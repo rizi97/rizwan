@@ -3288,8 +3288,8 @@ textarea:focus::placeholder {
   padding: 0 18px;
   cursor: pointer;
 }
-.fillter-btn-wrap .fillter-btn:hover {
-  color: var(--theme-primary);
+.fillter-btn-wrap .fillter-btn a:hover {
+  color: #0a58ca;
 }
 .fillter-btn-wrap .fillter-btn:is(.is-checked) {
   color: var(--theme-primary);
