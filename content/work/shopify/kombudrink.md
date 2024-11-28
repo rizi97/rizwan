@@ -1,8 +1,8 @@
 ---
 layout: single
-title: KombuDrink
+title: KombuDrinks
 indentifer: work
 image: assets/img/portfolio/shopify/kombudrink.webp
-link: kombudrink.com
+link: kombudrinks.com
 date: 2024-08-31
 ---
