@@ -3337,6 +3337,10 @@ textarea:focus::placeholder {
   color: var(--theme-primary);
 }
 
+.isotop-item .fillter-item .item-title a:hover {
+  color: #0a58ca;
+}
+
 .isotop-item,
 .grid-sizer {
   width: 50%;
@@ -3496,6 +3500,20 @@ textarea:focus::placeholder {
   overflow: hidden;
   margin-bottom: 20px;
 }
+.portfolio-modal-box .modal-dialog .modal-content .modal-body .blog-click {
+  text-align: center;
+  animation: blogClickUpDown 1s ease-in-out infinite;
+}
+
+@keyframes blogClickUpDown {
+  0%, 100% {
+      transform: translateY(0); /* Default position */
+  }
+  50% {
+      transform: translateY(5px); /* Move down by 5px */
+  }
+}
+
 .portfolio-modal-box .modal-dialog .modal-content .modal-body .blog-title {
   font-size: 28px;
   text-align: center;
