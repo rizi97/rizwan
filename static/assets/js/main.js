@@ -27,7 +27,7 @@
     var content = $(this).find("h6 a").html(); 
     var _href = $(this).find(".specific a.img").attr("href"); 
 
-    $(".portfolio-modal-box .blog-title").html("<p>Click here <i class='fa-solid fa-arrow-down'></i></p> <a target='_blank' href='//" + _href + "'>" + content + "</a>");
+    $(".portfolio-modal-box .blog-title").html("<a target='_blank' href='//" + _href + "'>" + content + "</a>");
 
     var _src = jQuery(this).find("img").attr("src"); 
     $(".portfolio-modal-box .h1-modal-img").find("img").attr("src", _src);

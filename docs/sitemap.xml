@@ -3,7 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/rizwan/</loc>
-    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
+    <lastmod>2024-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/rizwan/work/shopify/domogummies/</loc>
+    <lastmod>2024-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/rizwan/work/shopify/</loc>
+    <lastmod>2024-11-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/rizwan/work/hugo/dimsoudigital/</loc>
     <lastmod>2024-10-22T00:00:00+00:00</lastmod>
@@ -25,9 +31,6 @@
   </url><url>
     <loc>http://localhost:1313/rizwan/work/wordpress/citrusbits/</loc>
     <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/rizwan/work/shopify/</loc>
-    <lastmod>2024-09-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/rizwan/work/shopify/digitalzonesoftware/</loc>
     <lastmod>2024-09-02T00:00:00+00:00</lastmod>
