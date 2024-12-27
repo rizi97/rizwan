@@ -3529,7 +3529,8 @@ textarea:focus::placeholder {
   background: #e5e5e5;
   text-decoration: underline;
 }
-.portfolio-modal-box .modal-dialog .modal-content .modal-body .blog-title a:hover {
+.portfolio-modal-box .modal-dialog .modal-content .modal-body .blog-title a:hover,
+.portfolio-modal-box .modal-dialog .modal-content .modal-body .blog-title a:focus {
   background: #000000;
   color: #fff;
 }
