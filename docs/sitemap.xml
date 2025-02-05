@@ -3,7 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/rizwan/</loc>
-    <lastmod>2024-11-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/rizwan/work/hugo/marketing_dashboard/</loc>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/rizwan/work/hugo/</loc>
+    <lastmod>2024-12-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/rizwan/work/shopify/domogummies/</loc>
     <lastmod>2024-11-30T00:00:00+00:00</lastmod>
@@ -12,9 +18,6 @@
     <lastmod>2024-11-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/rizwan/work/hugo/dimsoudigital/</loc>
-    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/rizwan/work/hugo/</loc>
     <lastmod>2024-10-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/rizwan/work/hugo/dictanote/</loc>
@@ -109,6 +112,9 @@
   </url><url>
     <loc>http://localhost:1313/rizwan/work/wordpress/phasepreschool/</loc>
     <lastmod>2024-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/rizwan/work/wordpress/caringconnections/</loc>
+    <lastmod>2024-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/rizwan/categories/</loc>
   </url><url>
