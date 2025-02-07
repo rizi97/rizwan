@@ -4,7 +4,7 @@ title = 'Rizwan Portfolio'
  
 publishDir = "docs"
 
-paginate = 20
+pagination.pagerSize = 20
 
 [menu]
 [[menu.main_menu]]
