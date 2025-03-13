@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Portfolio: Shopify on Rizwan Portfolio</title>
-    <link>https://rizi97.github.io/rizwan/work/shopify/</link>
+    <link>http://localhost:1313/rizwan/work/shopify/</link>
     <description>Recent content in Portfolio: Shopify on Rizwan Portfolio</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 30 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://rizi97.github.io/rizwan/work/shopify/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/rizwan/work/shopify/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gummies - Subscription Store</title>
-      <link>https://rizi97.github.io/rizwan/work/shopify/domogummies/</link>
+      <link>http://localhost:1313/rizwan/work/shopify/domogummies/</link>
       <pubDate>Sat, 30 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/rizwan/work/shopify/domogummies/</guid>
+      <guid>http://localhost:1313/rizwan/work/shopify/domogummies/</guid>
       <description></description>
     </item>
     <item>
       <title>Software Selling Site</title>
-      <link>https://rizi97.github.io/rizwan/work/shopify/digitalzonesoftware/</link>
+      <link>http://localhost:1313/rizwan/work/shopify/digitalzonesoftware/</link>
       <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/rizwan/work/shopify/digitalzonesoftware/</guid>
+      <guid>http://localhost:1313/rizwan/work/shopify/digitalzonesoftware/</guid>
       <description></description>
     </item>
     <item>
       <title>KombuDrinks</title>
-      <link>https://rizi97.github.io/rizwan/work/shopify/kombudrink/</link>
+      <link>http://localhost:1313/rizwan/work/shopify/kombudrink/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/rizwan/work/shopify/kombudrink/</guid>
+      <guid>http://localhost:1313/rizwan/work/shopify/kombudrink/</guid>
       <description></description>
     </item>
     <item>
       <title>Organics Care Crow</title>
-      <link>https://rizi97.github.io/rizwan/work/shopify/organicscarecrow/</link>
+      <link>http://localhost:1313/rizwan/work/shopify/organicscarecrow/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/rizwan/work/shopify/organicscarecrow/</guid>
+      <guid>http://localhost:1313/rizwan/work/shopify/organicscarecrow/</guid>
       <description></description>
     </item>
     <item>
       <title>Wood Stock Resources</title>
-      <link>https://rizi97.github.io/rizwan/work/shopify/woodstockresources/</link>
+      <link>http://localhost:1313/rizwan/work/shopify/woodstockresources/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/rizwan/work/shopify/woodstockresources/</guid>
+      <guid>http://localhost:1313/rizwan/work/shopify/woodstockresources/</guid>
       <description></description>
     </item>
     <item>
       <title>Furniture | Warehouse | Tools</title>
-      <link>https://rizi97.github.io/rizwan/work/shopify/bestabrasives/</link>
+      <link>http://localhost:1313/rizwan/work/shopify/bestabrasives/</link>
       <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/rizwan/work/shopify/bestabrasives/</guid>
+      <guid>http://localhost:1313/rizwan/work/shopify/bestabrasives/</guid>
       <description></description>
     </item>
     <item>
       <title>Organic Delivery Sydney</title>
-      <link>https://rizi97.github.io/rizwan/work/shopify/organicdeliverysydney/</link>
+      <link>http://localhost:1313/rizwan/work/shopify/organicdeliverysydney/</link>
       <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/rizwan/work/shopify/organicdeliverysydney/</guid>
+      <guid>http://localhost:1313/rizwan/work/shopify/organicdeliverysydney/</guid>
       <description></description>
     </item>
     <item>
       <title>Italian Shoes</title>
-      <link>https://rizi97.github.io/rizwan/work/shopify/italianshoes/</link>
+      <link>http://localhost:1313/rizwan/work/shopify/italianshoes/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/rizwan/work/shopify/italianshoes/</guid>
+      <guid>http://localhost:1313/rizwan/work/shopify/italianshoes/</guid>
       <description></description>
     </item>
   </channel>
