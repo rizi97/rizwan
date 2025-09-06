@@ -9,6 +9,13 @@
     <lastBuildDate>Fri, 06 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/rizwan/work/wordpress/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Firmpilot - Law site</title>
+      <link>http://localhost:1313/rizwan/work/wordpress/firmpilot/</link>
+      <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rizwan/work/wordpress/firmpilot/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>TegMade</title>
       <link>http://localhost:1313/rizwan/work/wordpress/tegmade/</link>
       <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
@@ -69,6 +76,13 @@
       <link>http://localhost:1313/rizwan/work/wordpress/nitestv/</link>
       <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/rizwan/work/wordpress/nitestv/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Restaurant Landing Page</title>
+      <link>http://localhost:1313/rizwan/work/wordpress/dylansocialmanager/</link>
+      <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rizwan/work/wordpress/dylansocialmanager/</guid>
       <description></description>
     </item>
     <item>
