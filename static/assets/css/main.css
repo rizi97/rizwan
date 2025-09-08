@@ -3012,6 +3012,7 @@ textarea:focus::placeholder {
 .bostami-client-slider-logo {
   padding: 0px 15px;
   height: 62px;
+  object-fit: contain;
 }
 
 .bostami-main-menu-wrap {

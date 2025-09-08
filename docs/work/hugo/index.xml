@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Portfolio: Hugo on Rizwan Portfolio</title>
-    <link>https://rizi97.github.io/rizwan/work/hugo/</link>
+    <link>http://localhost:1313/rizwan/work/hugo/</link>
     <description>Recent content in Portfolio: Hugo on Rizwan Portfolio</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 05 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://rizi97.github.io/rizwan/work/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/rizwan/work/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Matplus - Multisite</title>
-      <link>https://rizi97.github.io/rizwan/work/hugo/matplus/</link>
+      <link>http://localhost:1313/rizwan/work/hugo/matplus/</link>
       <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/rizwan/work/hugo/matplus/</guid>
+      <guid>http://localhost:1313/rizwan/work/hugo/matplus/</guid>
       <description></description>
     </item>
     <item>
       <title>Marketing Dashboard</title>
-      <link>https://rizi97.github.io/rizwan/work/hugo/marketing_dashboard/</link>
+      <link>http://localhost:1313/rizwan/work/hugo/marketing_dashboard/</link>
       <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/rizwan/work/hugo/marketing_dashboard/</guid>
+      <guid>http://localhost:1313/rizwan/work/hugo/marketing_dashboard/</guid>
       <description></description>
     </item>
     <item>
       <title>IT Company</title>
-      <link>https://rizi97.github.io/rizwan/work/hugo/dimsoudigital/</link>
+      <link>http://localhost:1313/rizwan/work/hugo/dimsoudigital/</link>
       <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/rizwan/work/hugo/dimsoudigital/</guid>
+      <guid>http://localhost:1313/rizwan/work/hugo/dimsoudigital/</guid>
       <description></description>
     </item>
     <item>
       <title>TyskTech - Multisite</title>
-      <link>https://rizi97.github.io/rizwan/work/hugo/tysktech/</link>
+      <link>http://localhost:1313/rizwan/work/hugo/tysktech/</link>
       <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/rizwan/work/hugo/tysktech/</guid>
+      <guid>http://localhost:1313/rizwan/work/hugo/tysktech/</guid>
       <description></description>
     </item>
     <item>
       <title>News Site</title>
-      <link>https://rizi97.github.io/rizwan/work/hugo/top-fin/</link>
+      <link>http://localhost:1313/rizwan/work/hugo/top-fin/</link>
       <pubDate>Tue, 22 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/rizwan/work/hugo/top-fin/</guid>
+      <guid>http://localhost:1313/rizwan/work/hugo/top-fin/</guid>
       <description></description>
     </item>
     <item>
       <title>Dictanote</title>
-      <link>https://rizi97.github.io/rizwan/work/hugo/dictanote/</link>
+      <link>http://localhost:1313/rizwan/work/hugo/dictanote/</link>
       <pubDate>Mon, 21 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/rizwan/work/hugo/dictanote/</guid>
+      <guid>http://localhost:1313/rizwan/work/hugo/dictanote/</guid>
       <description></description>
     </item>
     <item>
       <title>IoT Lighting</title>
-      <link>https://rizi97.github.io/rizwan/work/hugo/controlledlighting/</link>
+      <link>http://localhost:1313/rizwan/work/hugo/controlledlighting/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/rizwan/work/hugo/controlledlighting/</guid>
+      <guid>http://localhost:1313/rizwan/work/hugo/controlledlighting/</guid>
       <description></description>
     </item>
     <item>
       <title>Lawfirm site</title>
-      <link>https://rizi97.github.io/rizwan/work/hugo/nhklaw/</link>
+      <link>http://localhost:1313/rizwan/work/hugo/nhklaw/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/rizwan/work/hugo/nhklaw/</guid>
+      <guid>http://localhost:1313/rizwan/work/hugo/nhklaw/</guid>
       <description></description>
     </item>
     <item>
       <title>Company Portfolio</title>
-      <link>https://rizi97.github.io/rizwan/work/hugo/framer/</link>
+      <link>http://localhost:1313/rizwan/work/hugo/framer/</link>
       <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/rizwan/work/hugo/framer/</guid>
+      <guid>http://localhost:1313/rizwan/work/hugo/framer/</guid>
       <description></description>
     </item>
     <item>
       <title>Medical | Health Landing Page</title>
-      <link>https://rizi97.github.io/rizwan/work/hugo/gatewaylanguages/</link>
+      <link>http://localhost:1313/rizwan/work/hugo/gatewaylanguages/</link>
       <pubDate>Tue, 27 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://rizi97.github.io/rizwan/work/hugo/gatewaylanguages/</guid>
+      <guid>http://localhost:1313/rizwan/work/hugo/gatewaylanguages/</guid>
       <description></description>
     </item>
   </channel>
