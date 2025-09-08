@@ -2074,6 +2074,7 @@ textarea:focus::placeholder {
 .bostami-page-content-wrap {
   background-color: var(--common-white);
   border-radius: 20px;
+  margin-top: -16%;
 }
 
 .bostami-section-title-wrap .section-title {
@@ -3509,10 +3510,14 @@ textarea:focus::placeholder {
   height: 450px;
   object-fit: contain;
 }
-.portfolio-modal-box .modal-dialog .modal-content .modal-body .blog-click {
+.portfolio-modal-box .modal-dialog .modal-content .modal-body .blog-click,
+.home-arrow-click {
   text-align: center;
   animation: blogClickUpDown 1s ease-in-out infinite;
   font-size: 14px;
+}
+.home-arrow-click {
+  font-size: 32px;
 }
 
 @keyframes blogClickUpDown {

@@ -1,10 +1,11 @@
 baseURL = "https://rizi97.github.io/rizwan/"
 ## baseURL = "/"
 title = 'Rizwan Portfolio'
- 
-publishDir = "docs"
 
 paginate = 20
+
+[outputs]
+  home = ["HTML", "RSS", "SITEMAP", "ROBOTS"]
 
 [menu]
 [[menu.main_menu]]

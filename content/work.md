@@ -1,6 +1,6 @@
 ---
 layout: work
-title: Portfolio Category
+title: Select Portfolio Category
 indentifer: work
 category_list:
     - item:
