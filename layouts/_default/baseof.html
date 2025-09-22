@@ -9,6 +9,23 @@
       <title>
          {{ .Site.Title }} | {{ if .Page.Title }}{{ .Page.Title }}{{ end }}
       </title>
+
+      <meta name="description" content="M. Rizwan Aslam — Web Solutions Specialist & Copywriter. I create end-to-end digital solutions including websites, apps, CMS, CRM, and SEO for international clients using WordPress, Hugo, Shopify, Laravel, React, and more." />
+      <meta name="keywords" content="web solutions specialist, freelance web developer, wordpress expert, hugo developer, shopify developer, laravel developer, reactjs developer, vuejs developer, angular developer, api integration, crm specialist, hubspot, zoho, mailchimp, digital marketing, seo expert, full stack developer, remote web developer, custom web applications" />
+      <meta name="author" content="M. Rizwan Aslam" />
+
+      <!-- Open Graph / Social Sharing -->
+      <meta property="og:title" content="M. Rizwan Aslam | Web Solutions Specialist & Copywriter" />
+      <meta property="og:description" content="End-to-end web solutions for global clients — WordPress, Hugo, Shopify, React, Laravel, SEO, CRM & more." />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="{{ .Site.BaseURL }}" />
+      <meta property="og:image" content="{{ "assets/img/personal-info/parson-img-1.jpeg" | relURL }}" />
+
+      <!-- Twitter Card -->
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="M. Rizwan Aslam | Web Solutions Specialist & Copywriter" />
+      <meta name="twitter:description" content="Web Solutions Specialist for global clients: WordPress, Hugo, Shopify, React, Laravel, SEO & CRM integrations." />
+      <meta name="twitter:image" content="{{ "assets/img/personal-info/parson-img-1.jpeg" | relURL }}" />
       
       <link rel="shortcut icon" type="image/x-icon" href='{{ "assets/img/personal-info/parson-img-1.jpeg" | relURL }}'>
       <link rel="stylesheet" href='{{ "assets/css/bootstrap.min.css" | relURL }}'>
