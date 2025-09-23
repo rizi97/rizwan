@@ -10,13 +10,13 @@ paginate = 20
 
 [menu]
 [[menu.main_menu]]
-  name = 'About'
-  url = '/'
+  name = 'About CEO'
+  url = '/about-ceo'
   weight = '1'
-#[[menu.main_menu]]
-#  name = 'Resume'
-#  url = 'resume'
-#  weight = '2'
+[[menu.main_menu]]
+  name = 'Services'
+  url = '/'
+  weight = '2'
 [[menu.main_menu]]
   name = 'Works'
   url = '/work/wordpress/'
