@@ -19,7 +19,7 @@ paginate = 20
 #  weight = '2'
 [[menu.main_menu]]
   name = 'Works'
-  url = 'work'
+  url = '/work/wordpress/'
   weight = '3'
 [[menu.main_menu]]
   name = 'Contact'

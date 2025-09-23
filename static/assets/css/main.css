@@ -2743,7 +2743,7 @@ textarea:focus::placeholder {
   }
 }
 .bostami-parsonal-info-bio {
-  font-size: 14px;
+  font-size: 16px;
   display: inline-block;
   font-weight: 500;
   text-transform: capitalize;
@@ -2751,7 +2751,8 @@ textarea:focus::placeholder {
   font-family: "Poppins", sans-serif;
   background-color: var(--light-white);
   border-radius: 5px;
-  padding: 4px 20px;
+  padding: 10px;
+  line-height: 28px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px),
   only screen and (min-width: 768px) and (max-width: 991px),
