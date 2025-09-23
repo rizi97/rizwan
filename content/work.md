@@ -2,6 +2,7 @@
 layout: work
 title: Select Portfolio Category
 indentifer: work
+sitemap: true
 category_list:
     - item:
         title: WordPress
