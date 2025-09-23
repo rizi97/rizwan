@@ -1,0 +1,71 @@
+{{ define "main" }}
+
+<div class="container z-index-3">
+  <div class="row">
+    {{ partial "left_sidebar.html" . }}
+
+    <style>
+      .about-ceo p, .about-ceo ul li {
+        font-size: 15px;
+      }
+      .about-ceo a {
+        color: rgb(77, 115, 117);
+        text-decoration: underline;
+      }
+    </style>
+
+    <!-- about-page-start -->
+    <div class="col-xxl-8 col-xl-9 about-ceo">
+      <div class="bostami-page-content-wrap">
+        <!-- page title -->
+        <div class="section-wrapper pl-60 pr-60 pt-60">
+          <div class="bostami-page-title-wrap mb-35">
+            <h2 class="page-title">Meet Our Founder</h2>
+            <h5>M. Rizwan Aslam — Founder & CEO of CrowView</h5>
+            <p>
+              With a proven background in <b>web design, development, mobile solutions, and digital growth strategies,
+              Rizwan Aslam leads CrowView to be the trusted partner for agencies worldwide.</b>
+            </p>
+            <p>
+              He began his journey as an independent developer, successfully delivering projects for international
+              clients on platforms like <b>Upwork, GitHub, and LinkedIn</b>. While working closely with agencies
+              worldwide, Rizwan noticed a recurring challenge: agencies often struggled to scale when multiple client
+                projects piled up.
+            </p>
+            <p>
+              This realization sparked the vision for CrowView — an <b>end-to-end digital solutions agency</b> built to act as
+              a reliable outsourcing and development partner for design and marketing teams.
+            </p>
+            <p>
+              Under Rizwan’s leadership, CrowView has grown into a trusted partner for agencies, helping them:
+            </p>
+            <ul style="list-style: disc;list-style-position: inside;margin-bottom: 15px;">
+              <li>Deliver projects faster without sacrificing quality</li>
+              <li>Scale their development resources flexibly</li>
+              <li>Access a wide skill set under one roof: design, development, mobile, SEO, content, and AI solutions
+              </li>
+            </ul>
+            <p>
+              For Rizwan, it's simple: <b>your agency's success is our mission.</b>
+            </p>
+            <h6>✅ <u>Founder Links</u></h6>
+            <ul>
+              <li>🔗 <a href="https://www.linkedin.com/in/muhammad-rizwan-aslam" target="_blank">Connect on LinkedIn</a></li>
+              <li>🔗 <a href="https://www.upwork.com/freelancers/mrizwanaslam" target="_blank">See client reviews on Upwork</a></li>
+              <li>🔗 <a href="https://github.com/rizi97" target="_blank">Explore GitHub contributions</a></li>
+              <li>🔗 <a href="https://stackoverflow.com/users/13847939/muhammad-rizwan" target="_blank">Technical Contributions on StackOverflow</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <!-- footer copyright -->
+        {{ partial "footer.html" . }}
+      </div>
+    </div>
+    <!-- about-page-end -->
+
+    {{ partial "right_sidebar.html" . }}
+  </div>
+</div>
+{{ end }}

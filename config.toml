@@ -11,7 +11,7 @@ paginate = 20
 [menu]
 [[menu.main_menu]]
   name = 'About CEO'
-  url = '/about-ceo'
+  url = '/about-ceo' 
   weight = '1'
 [[menu.main_menu]]
   name = 'Services'
