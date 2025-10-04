@@ -9,10 +9,10 @@ paginate = 20
   home = ["HTML", "RSS", "SITEMAP", "ROBOTS"]
 
 [menu]
-[[menu.main_menu]]
-  name = 'About CEO'
-  url = '/about-ceo' 
-  weight = '1'
+##[[menu.main_menu]]
+##  name = 'About CEO'
+##  url = '/about-ceo' 
+##  weight = '1'
 [[menu.main_menu]]
   name = 'Services'
   url = '/'
