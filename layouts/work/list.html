@@ -19,15 +19,26 @@
             {{ partial "portfolio_filters.html" . }}
 
             <div class="post-list">
-              {{ $sectionName := .Params.section }} {{ $section := .Site.GetPage
-              "section" $sectionName }} {{ $posts := $section.Pages }}
+             {{ $sectionName := .Params.section }}
+              {{ $section := .Site.GetPage "section" $sectionName }}
 
-              <!-- {{ $sectionName }}
-              <p>Found {{ len $posts }} posts</p> -->
+              <!-- Split posts -->
+              {{ $pinned := where $section.Pages "Params.pinned" true }}
+              {{ $normal := where $section.Pages "Params.pinned" "ne" true }}
 
-              {{ $paginator := .Paginate $posts }}
-              <!-- <p>Current Page: {{ $paginator.PageNumber }}</p>
-              <p>Pages: {{ $paginator.TotalPages }}</p> -->
+              <!-- Ordered list -->
+              {{ $ordered := slice }}
+
+              {{ range $pinned }}
+                {{ $ordered = $ordered | append . }}
+              {{ end }}
+
+              {{ range $normal }}
+                {{ $ordered = $ordered | append . }}
+              {{ end }}
+
+              <!-- Pagination -->
+              {{ $paginator := .Paginate $ordered }}
 
               <div class="col-12">
                 <div id="fillter-item-active" class='fillter-item-wrap category-specific 
