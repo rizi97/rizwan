@@ -1,7 +1,6 @@
 baseURL = "https://rizi97.github.io/rizwan/"
-#baseURL = "https://crowview.com/"
 ## baseURL = "/"
-title = 'CrowView Portfolio'
+title = 'Rizwan Portfolio'
 
 paginate = 20
 
