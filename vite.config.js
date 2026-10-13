@@ -1,11 +1,11 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// The site is served from https://rizi97.github.io/rizwan/ (a GitHub Pages project site),
-// so every URL starts with /rizwan/.
+// The site is served from the custom domain https://mrizwanaslam.com/ (GitHub Pages),
+// so it lives at the domain root. public/CNAME tells GitHub Pages which domain to use.
 // For a custom domain at the root, build with:  BASE_PATH=/ npm run build
 // (and update SITE_URL in src/config/site.js).
-const base = process.env.BASE_PATH || '/rizwan/';
+const base = process.env.BASE_PATH || '/';
 
 export default defineConfig({
   base,

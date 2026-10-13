@@ -142,7 +142,7 @@ export const redirects = {
   'work-shopify.html': '/work/shopify/',
   'work-hugo.html': '/work/hugo/',
   'work/index.html': '/#work',
-  // Addresses from the earlier Hugo site that lived at /rizwan/
+  // Addresses from the earlier Hugo site
   'about-ceo/index.html': '/about/',
   'work/wordpress/page/2/index.html': '/work/wordpress/',
 };

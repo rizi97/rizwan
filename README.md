@@ -2,13 +2,13 @@
 
 Personal portfolio of Muhammad Rizwan Aslam. 
 
-Production URL: **https://rizi97.github.io/rizwan/**
+Production URL: **https://mrizwanaslam.com/**
 
 ## URLs
 
 | Page | URL |
 |---|---|
-| Home | `/rizwan/` |
-| About | `/rizwan/about/` |
-| Contact | `/rizwan/contact/` |
-| Portfolios | `/rizwan/work/wordpress/`, `/rizwan/work/shopify/`, `/rizwan/work/hugo/` |
+| Home | `/` |
+| About | `/about/` |
+| Contact | `/contact/` |
+| Portfolios | `/work/wordpress/`, `/work/shopify/`, `/work/hugo/` |
