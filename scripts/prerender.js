@@ -12,7 +12,7 @@ const entry = fs.readdirSync(ssrDir).find((f) => /^entry-server\.(m?js)$/.test(f
 const { render, ROUTES, redirects, sitemapPages, SITE_URL } = await import(pathToFileURL(path.join(ssrDir, entry)).href);
 
 const template = fs.readFileSync(path.join(dist, 'index.html'), 'utf8');
-const base = new URL(SITE_URL + '/').pathname; // "/rizwan-portfolio/"
+const base = new URL(SITE_URL + '/').pathname; // "/rizwan/"
 
 const write = (rel, content) => {
   const file = path.join(dist, rel);

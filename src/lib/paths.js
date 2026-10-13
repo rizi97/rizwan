@@ -1,8 +1,8 @@
 import { SITE_URL } from '../config/site.js';
 
-const BASE = import.meta.env.BASE_URL; // e.g. "/rizwan-portfolio/"
+const BASE = import.meta.env.BASE_URL; // e.g. "/rizwan/"
 
-/** Public asset path, e.g. asset('assets/img/x.webp') -> "/rizwan-portfolio/assets/img/x.webp" */
+/** Public asset path, e.g. asset('assets/img/x.webp') -> "/rizwan/assets/img/x.webp" */
 export const asset = (p) => BASE + p.replace(/^\//, '');
 
 /** Absolute production URL for a route path, e.g. absUrl('/about/') */

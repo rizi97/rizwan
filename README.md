@@ -8,7 +8,7 @@ Production URL: **https://rizi97.github.io/rizwan/**
 
 | Page | URL |
 |---|---|
-| Home | `/rizwan-portfolio/` |
-| About | `/rizwan-portfolio/about/` |
-| Contact | `/rizwan-portfolio/contact/` |
-| Portfolios | `/rizwan-portfolio/work/wordpress/`, `/rizwan-portfolio/work/shopify/`, `/rizwan-portfolio/work/hugo/` |
+| Home | `/rizwan/` |
+| About | `/rizwan/about/` |
+| Contact | `/rizwan/contact/` |
+| Portfolios | `/rizwan/work/wordpress/`, `/rizwan/work/shopify/`, `/rizwan/work/hugo/` |

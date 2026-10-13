@@ -3,7 +3,7 @@
 // Production address, without a trailing slash. Used for canonical URLs, Open Graph,
 // JSON-LD and the sitemap. If you move to a custom domain, change it here AND set
 // BASE_PATH in vite.config.js (or the BASE_PATH env var) to match.
-export const SITE_URL = 'https://rizi97.github.io/rizwan-portfolio';
+export const SITE_URL = 'https://rizi97.github.io/rizwan';
 
 export const PERSON = {
   name: 'Muhammad Rizwan Aslam',

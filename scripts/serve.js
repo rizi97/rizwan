@@ -1,4 +1,4 @@
-// Serves the production build at http://localhost:4173/rizwan-portfolio/ exactly as GitHub Pages
+// Serves the production build at http://localhost:4173/rizwan/ exactly as GitHub Pages
 // would: folders serve index.html, unknown paths get 404.html. No dependencies needed.
 import http from 'node:http';
 import fs from 'node:fs';
@@ -6,7 +6,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const dist = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 'dist');
-const base = (process.env.BASE_PATH || '/rizwan-portfolio/').replace(/\/?$/, '/');
+const base = (process.env.BASE_PATH || '/rizwan/').replace(/\/?$/, '/');
 const port = +process.env.PORT || 4173;
 const types = {
   '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml',
