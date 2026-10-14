@@ -12,7 +12,7 @@ export const PERSON = {
 };
 
 export const CONTACT = {
-  email: 'mianrizwan465@gmail.com',
+  email: 'expertzrizwan@gmail.com',
   phone: '+92 303 0697979',
   phoneIntl: '+923030697979',
   whatsapp: 'https://wa.me/923030697979',

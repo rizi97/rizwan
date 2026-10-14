@@ -77,7 +77,7 @@ export const seo = {
   '/contact/': {
     title: 'Contact Rizwan | Hire a WordPress & Shopify Developer',
     description:
-      'Start a WordPress, WooCommerce, Shopify or Hugo project with Rizwan. Send a project inquiry, email mianrizwan465@gmail.com or message on WhatsApp.',
+      'Start a WordPress, WooCommerce, Shopify or Hugo project with Rizwan. Send a project inquiry, email expertzrizwan@gmail.com or message on WhatsApp.',
     ogDescription: 'Tell me about your project by email, WhatsApp or the inquiry form.',
     image: 'assets/img/rizwan-portrait.webp',
     imageAlt: 'Portrait of Muhammad Rizwan Aslam, web developer',
