@@ -84,6 +84,7 @@ function Hero() {
               src="assets/img/rizwan-portrait.webp"
               small="assets/img/rizwan-portrait-480.webp"
               smallW={480}
+              mid="assets/img/rizwan-portrait-640.webp"
               w={825}
               h={1100}
               sizes="(max-width: 600px) 92vw, (max-width: 940px) 60vw, 460px"
@@ -337,6 +338,7 @@ function Why() {
               src="assets/img/rizwan-working.webp"
               small="assets/img/rizwan-working-480.webp"
               smallW={480}
+              mid="assets/img/rizwan-working-640.webp"
               w={825}
               h={1100}
               sizes="(max-width: 940px) 92vw, 460px"

@@ -87,6 +87,7 @@ export default function About() {
                 src="assets/img/rizwan-seated.webp"
                 small="assets/img/rizwan-seated-480.webp"
                 smallW={480}
+                mid="assets/img/rizwan-seated-640.webp"
                 w={825}
                 h={1100}
                 sizes="(max-width: 940px) 92vw, 480px"

@@ -45,7 +45,7 @@ export const seo = {
     ogDescription: 'Websites built to work harder for your business. WordPress, WooCommerce, Shopify and Hugo development, maintenance and integrations.',
     image: 'assets/img/rizwan-portrait.webp',
     imageAlt: 'Portrait of Muhammad Rizwan Aslam, web developer',
-    preload: { src: 'assets/img/rizwan-portrait.webp', small: 'assets/img/rizwan-portrait-480.webp', sizes: '(max-width: 600px) 92vw, (max-width: 940px) 60vw, 460px' },
+    preload: { src: 'assets/img/rizwan-portrait.webp', small: 'assets/img/rizwan-portrait-480.webp', mid: 'assets/img/rizwan-portrait-640.webp', sizes: '(max-width: 600px) 92vw, (max-width: 940px) 60vw, 460px' },
     jsonLd: {
       '@context': 'https://schema.org',
       '@graph': [
@@ -66,7 +66,7 @@ export const seo = {
     ogDescription: 'Nine years of building, fixing and maintaining websites for businesses and agencies.',
     image: 'assets/img/rizwan-seated.webp',
     imageAlt: 'Muhammad Rizwan Aslam seated, smiling at the camera',
-    preload: { src: 'assets/img/rizwan-seated.webp', small: 'assets/img/rizwan-seated-480.webp', sizes: '(max-width: 940px) 92vw, 480px' },
+    preload: { src: 'assets/img/rizwan-seated.webp', small: 'assets/img/rizwan-seated-480.webp', mid: 'assets/img/rizwan-seated-640.webp', sizes: '(max-width: 940px) 92vw, 480px' },
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'ProfilePage',

@@ -31,7 +31,7 @@ export function headData(path) {
     canonical,
     jsonLd: s.jsonLd || null,
     preload: s.preload
-      ? { href: asset(s.preload.src), srcset: `${asset(s.preload.small)} 480w, ${asset(s.preload.src)} 825w`, sizes: s.preload.sizes }
+      ? { href: asset(s.preload.src), srcset: `${asset(s.preload.small)} 480w, ${asset(s.preload.mid)} 640w, ${asset(s.preload.src)} 825w`, sizes: s.preload.sizes }
       : null,
   };
 }
