@@ -91,7 +91,7 @@ const CASE_STUDIES = {
     detail: { w: 1448, h: 1086 },
     body: [
       'Developed a bilingual WordPress e-commerce website from scratch by converting Adobe XD designs into a custom WordPress theme. Built flexible theme customization options, custom metaobjects, and dynamic content management to let the client control website content directly from the backend.',
-      'Configured WPML for French and English language management and implemented custom card functionality. This project showcases my expertise in WordPress theme development, XD-to-WordPress conversion, ACF, multilingual e-commerce, and dynamic theme customization.',
+      'Configured WPML for French and English language management and implemented custom cart functionality. This project showcases my expertise in WordPress theme development, XD-to-WordPress conversion, ACF, multilingual e-commerce, and dynamic theme customization.',
     ],
   },
 };

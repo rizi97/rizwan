@@ -800,6 +800,28 @@ h2.eyebrow {
 .mobile-link.active {
   color: var(--accent);
 }
+.mobile-link-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  cursor: pointer;
+}
+.mobile-link-toggle .caret {
+  font-size: 0.5em;
+  transition: transform 0.2s;
+}
+.mobile-link-toggle[aria-expanded='true'] .caret {
+  transform: rotate(180deg);
+}
+.mobile-sub {
+  display: flex;
+  flex-direction: column;
+}
 .mobile-menu-foot {
   margin-top: auto;
   padding-top: 28px;

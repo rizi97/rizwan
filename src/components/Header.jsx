@@ -21,6 +21,7 @@ export default function Header() {
   const { pathname, hash } = useLocation();
   const [workOpen, setWorkOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [mobileWorkOpen, setMobileWorkOpen] = useState(false);
   const workRef = useRef(null);
   const menuBtnRef = useRef(null);
   const closeBtnRef = useRef(null);
@@ -48,6 +49,8 @@ export default function Header() {
   // Mobile menu: lock scroll, focus, Escape, close when resized to desktop.
   useEffect(() => {
     if (!menuOpen) return;
+    // Work list starts collapsed, except on a work page where it shows where you are.
+    setMobileWorkOpen(onWork);
     document.body.style.overflow = 'hidden';
     closeBtnRef.current?.focus();
     const onKey = (e) => e.key === 'Escape' && setMenuOpen(false);
@@ -60,61 +63,68 @@ export default function Header() {
       window.removeEventListener('resize', onResize);
       menuBtnRef.current?.focus({ preventScroll: true });
     };
-  }, [menuOpen]);
+  }, [menuOpen]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <header className="site-header" data-nav="">
-      <div className="container header-inner">
-        <Logo />
+    <>
+      <header className="site-header" data-nav="">
+        <div className="container header-inner">
+          <Logo />
 
-        <nav className="nav-desktop" aria-label="Main">
-          <div className="nav-work" ref={workRef} onMouseEnter={() => setWorkOpen(true)} onMouseLeave={() => setWorkOpen(false)}>
-            <button
-              type="button"
-              className={`nav-link${onWork ? ' is-active' : ''}`}
-              aria-expanded={workOpen}
-              aria-controls="work-menu"
-              onClick={() => setWorkOpen((o) => !o)}
-            >
-              Work <span className="caret" aria-hidden="true">▾</span>
-            </button>
-            <div id="work-menu" className="nav-dropdown" hidden={!workOpen}>
-              <div className="nav-dropdown-panel">
-                {WORK.map((w) => (
-                  <NavLink key={w.to} to={w.to} className="nav-dropdown-link">
-                    {w.label} portfolio <Arrow />
-                  </NavLink>
-                ))}
+          <nav className="nav-desktop" aria-label="Main">
+            <div className="nav-work" ref={workRef} onMouseEnter={() => setWorkOpen(true)} onMouseLeave={() => setWorkOpen(false)}>
+              <button
+                type="button"
+                className={`nav-link${onWork ? ' is-active' : ''}`}
+                aria-expanded={workOpen}
+                aria-controls="work-menu"
+                onClick={() => setWorkOpen((o) => !o)}
+              >
+                Work{' '}
+                <span className="caret" aria-hidden="true">
+                  ▾
+                </span>
+              </button>
+              <div id="work-menu" className="nav-dropdown" hidden={!workOpen}>
+                <div className="nav-dropdown-panel">
+                  {WORK.map((w) => (
+                    <NavLink key={w.to} to={w.to} className="nav-dropdown-link">
+                      {w.label} portfolio <Arrow />
+                    </NavLink>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-          {LINKS.map((l) => {
-            const L = l.to.includes('#') ? Link : NavLink;
-            return (
-              <L key={l.to} to={l.to} className="nav-link">
-                {l.label}
-              </L>
-            );
-          })}
-          <Link to="/contact/#book" className="btn btn-sm btn-primary nav-cta">
-            <span className="dot-live" aria-hidden="true" /> Book a Call
-          </Link>
-        </nav>
+            {LINKS.map((l) => {
+              const L = l.to.includes('#') ? Link : NavLink;
+              return (
+                <L key={l.to} to={l.to} className="nav-link">
+                  {l.label}
+                </L>
+              );
+            })}
+            <Link to="/contact/#book" className="btn btn-sm btn-primary nav-cta">
+              <span className="dot-live" aria-hidden="true" /> Book a Call
+            </Link>
+          </nav>
 
-        <button
-          ref={menuBtnRef}
-          type="button"
-          className="menu-toggle"
-          aria-label="Open menu"
-          aria-expanded={menuOpen}
-          aria-controls="mobile-menu"
-          onClick={() => setMenuOpen(true)}
-        >
-          <span />
-          <span />
-        </button>
-      </div>
+          <button
+            ref={menuBtnRef}
+            type="button"
+            className="menu-toggle"
+            aria-label="Open menu"
+            aria-expanded={menuOpen}
+            aria-controls="mobile-menu"
+            onClick={() => setMenuOpen(true)}
+          >
+            <span />
+            <span />
+          </button>
+        </div>
+      </header>
 
+      {/* Kept outside <header>: the header's backdrop blur (applied after scrolling)
+          would otherwise become the containing block for this fixed overlay and clip it. */}
       <div className="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu" hidden={!menuOpen}>
         <div className="mobile-menu-top">
           <span className="eyebrow">Menu</span>
@@ -123,12 +133,25 @@ export default function Header() {
           </button>
         </div>
         <nav className="mobile-nav" aria-label="Mobile">
-          <span className="eyebrow">Work</span>
-          {WORK.map((w) => (
-            <NavLink key={w.to} to={w.to} className="mobile-link mobile-link-sub">
-              {w.label}
-            </NavLink>
-          ))}
+          <button
+            type="button"
+            className={`mobile-link mobile-link-toggle${onWork ? ' active' : ''}`}
+            aria-expanded={mobileWorkOpen}
+            aria-controls="mobile-work"
+            onClick={() => setMobileWorkOpen((o) => !o)}
+          >
+            Work{' '}
+            <span className="caret" aria-hidden="true">
+              ▾
+            </span>
+          </button>
+          <div id="mobile-work" className="mobile-sub" hidden={!mobileWorkOpen}>
+            {WORK.map((w) => (
+              <NavLink key={w.to} to={w.to} className="mobile-link mobile-link-sub">
+                {w.label}
+              </NavLink>
+            ))}
+          </div>
           {LINKS.map((l) => {
             const L = l.to.includes('#') ? Link : NavLink;
             return (
@@ -145,6 +168,6 @@ export default function Header() {
           </Link>
         </div>
       </div>
-    </header>
+    </>
   );
 }
