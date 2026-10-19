@@ -100,10 +100,10 @@ export const seo = {
   '/work/shopify/': {
     title: 'Shopify Developer Portfolio | Rizwan',
     description:
-      'Live Shopify stores by Rizwan: custom Liquid themes, sections, metafields and subscription stores for food, retail and software brands.',
-    ogDescription: 'Live Shopify stores built and customized by Rizwan.',
-    image: 'assets/work/domogummies.webp',
-    imageAlt: 'Domo Gummies website shown on desktop and mobile, built with Shopify',
+      'Live Shopify stores by Rizwan, including Wavvy Supply: Figma to custom Shopify 2.0 themes, Liquid sections, Google Maps store locators, metafields and subscription stores.',
+    ogDescription: 'Live Shopify stores built and customized by Rizwan, from Figma to custom Shopify 2.0 themes.',
+    image: 'assets/work/wavvysupply.webp',
+    imageAlt: 'Wavvy Supply case study: custom Shopify 2.0 website shown on desktop, laptop and mobile',
     jsonLd: portfolio('/work/shopify/', 'Shopify Developer Portfolio', 'Shopify portfolio'),
   },
   '/work/hugo/': {

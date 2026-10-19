@@ -41,6 +41,7 @@ const rows = [
   ["investingletter", "Investing Letter", "wordpress", "Finance and investing", "investingletter.com", 1080, 1080],
   ["caringconnections", "Caring Connections", "wordpress", "Senior care charity", "caringconnections.us", 1080, 1080],
   ["entouragecannabis", "Entourage", "wordpress", "Specialty retail", "entouragecannabis.com", 940, 788],
+  ["wavvysupply", "Wavvy Supply", "shopify", "Figma to custom Shopify 2.0 theme", "wavvysupply.com", 1448, 1086],
   ["digitalzonesoftware", "Digital Zone Software", "shopify", "Software store", "digitalzonesoftware.com", 1080, 1420],
   ["domogummies", "Domo Gummies", "shopify", "Subscription store", "domogummies.com", 1080, 1080],
   ["organicscarecrow", "Organic Scarecrow", "shopify", "Organic products", "organicscarecrow.com", 1080, 1080],
@@ -65,6 +66,13 @@ const VARIANT_MIN = 740;
 
 // Case studies: a designed detail image for the popup plus the project write-up.
 const CASE_STUDIES = {
+  wavvysupply: {
+    detail: { w: 1448, h: 1086 },
+    body: [
+      'Revamped an outdated e-commerce website by converting Figma designs into a fully customized Shopify 2.0 theme. Developed responsive custom sections and modules, customized product pages and cart functionality, and integrated Google Maps API for interactive location selection and dynamic map pins.',
+      'Focused on pixel-perfect design, mobile responsiveness, and improved user experience. This project showcases my expertise in Shopify theme development, Figma-to-Shopify conversion, Liquid customization, API integration, and custom e-commerce functionality.',
+    ],
+  },
   tegmade: {
     detail: { w: 1448, h: 1086 },
     body: [
@@ -129,6 +137,10 @@ export const byPlatform = (platform) => projects.filter((p) => p.platform === pl
 
 const FEATURED = [
   { slug: 'worldfirst', text: 'Custom WordPress website for WorldFirst (Alibaba): Figma designs built in Elementor, a custom currency calculator, React front-end modules and REST API integrations.' },
+  {
+    slug: 'wavvysupply',
+    text: 'Figma designs converted into a fully custom Shopify 2.0 theme for Wavvy Supply, with custom Liquid sections, tailored product pages and cart, and a Google Maps store locator.',
+  },
   { slug: 'kombudrinks', text: 'Bilingual WordPress e-commerce website built from Adobe XD as a custom theme, with ACF-powered content and WPML for French and English.' },
   { slug: 'leapevent', text: 'WordPress website for an event technology and booking platform.' },
   { slug: 'matplus', text: 'Hugo multisite for Matplus, a software and services company in materials innovation, built as fast static pages.' },
