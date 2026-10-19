@@ -18,7 +18,7 @@ const COPY = {
   },
   shopify: {
     intro:
-      'Shopify stores for food, beverage, retail and software brands, built with Liquid themes, custom sections and subscription setups. Select a project to view it larger and browse the collection.',
+      'Shopify stores for food, retail and software brands, built with Liquid themes, custom sections and subscription setups. Select a project to view it larger and browse the collection.',
     cta: 'Planning a new Shopify store or a theme rebuild?',
   },
   hugo: {
@@ -86,7 +86,7 @@ export default function Portfolio({ platform }) {
           <ul className="project-grid">
             {list.map((p, i) => (
               <li key={p.slug} hidden={i >= limit}>
-                <article className="project-card">
+                <article className={`project-card${p.caseStudy ? ' is-case-study' : ''}`}>
                   <button type="button" className="project-card-img" onClick={() => setOpen(i)} aria-label={`Open ${p.name} project details`}>
                     <Img src={p.img} small={p.imgSmall} w={p.w} h={p.h} alt={p.alt} sizes="(max-width: 600px) 92vw, (max-width: 1000px) 46vw, 400px" />
                   </button>

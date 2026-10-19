@@ -1,6 +1,9 @@
 // Portfolio projects. To add one: put the screenshot in public/assets/work/<slug>.webp
 // (plus an optional 640px-wide <slug>-640.webp for small screens) and add a row below.
 // Columns: slug, name, platform, category, domain, image width, image height
+//
+// Case studies (see CASE_STUDIES below) also have <slug>-detail.webp, shown in the
+// project popup, and a written description.
 
 export const PLATFORMS = {
   wordpress: 'WordPress',
@@ -9,9 +12,10 @@ export const PLATFORMS = {
 };
 
 const rows = [
-  ["worldfirst", "WorldFirst", "wordpress", "International payments (Alibaba)", "worldfirst.com", 940, 788],
-  ["firmpilot", "Firmpilot", "wordpress", "Legal marketing platform", "firmpilot.com", 1800, 760],
-  ["tegmade", "TEG Made", "wordpress", "Brand and products website", "tegmade.com", 1080, 1080],
+  ["worldfirst", "WorldFirst", "wordpress", "International payments (Alibaba)", "worldfirst.com", 1448, 1086],
+  ["firmpilot", "Firmpilot", "wordpress", "Legal marketing platform", "firmpilot.com", 1448, 1086],
+  ["tegmade", "TEG Made", "wordpress", "Brand and products website", "tegmade.com", 1448, 1086],
+  ["kombudrinks", "Kombu Drinks", "wordpress", "Bilingual WordPress e-commerce", "kombudrinks.com", 1448, 1086],
   ["mudaustralia", "MUD Australia", "wordpress", "Ceramics brand", "mudaustralia.com", 1640, 924],
   ["leapevent", "Leap Event", "wordpress", "Event booking platform", "leapevent.tech", 1280, 720],
   ["wasteco", "WasteCo", "wordpress", "Cleaning services", "wasteco.net", 1280, 720],
@@ -37,7 +41,6 @@ const rows = [
   ["investingletter", "Investing Letter", "wordpress", "Finance and investing", "investingletter.com", 1080, 1080],
   ["caringconnections", "Caring Connections", "wordpress", "Senior care charity", "caringconnections.us", 1080, 1080],
   ["entouragecannabis", "Entourage", "wordpress", "Specialty retail", "entouragecannabis.com", 940, 788],
-  ["kombudrinks", "Kombu Drinks", "shopify", "Beverage brand", "kombudrinks.com", 1080, 1080],
   ["digitalzonesoftware", "Digital Zone Software", "shopify", "Software store", "digitalzonesoftware.com", 1080, 1420],
   ["domogummies", "Domo Gummies", "shopify", "Subscription store", "domogummies.com", 1080, 1080],
   ["organicscarecrow", "Organic Scarecrow", "shopify", "Organic products", "organicscarecrow.com", 1080, 1080],
@@ -60,6 +63,39 @@ const rows = [
 // A 640px variant exists for every screenshot wider than 740px (see README, "Images").
 const VARIANT_MIN = 740;
 
+// Case studies: a designed detail image for the popup plus the project write-up.
+const CASE_STUDIES = {
+  tegmade: {
+    detail: { w: 1448, h: 1086 },
+    body: [
+      'Developed the WordPress website from scratch using Figma designs and Elementor. Integrated website forms with Monday.com for lead management, Zapier for workflow automation, and ActiveCampaign for automated email communication.',
+      'Managed the complete project, including development, third-party integrations, and deployment. I also provide ongoing maintenance and support. This project showcases my expertise in Elementor, Figma-to-WordPress conversion, marketing automation, lead management, and WordPress maintenance.',
+    ],
+  },
+  worldfirst: {
+    detail: { w: 1448, h: 1086 },
+    body: [
+      'Developed a custom WordPress website (Alibaba) by converting Figma designs into Elementor layouts and building the complete front end.',
+      'Created a custom currency calculator and integrated React-based front-end modules, WordPress REST APIs, and Node.js functionality.',
+      'Also developed multiple landing pages for Alibaba and other company projects. This project showcases my expertise in WordPress development, Figma-to-WordPress conversion, Elementor, React, API integration, custom functionality, and responsive web development.',
+    ],
+  },
+  firmpilot: {
+    detail: { w: 1920, h: 1080 },
+    body: [
+      'Developed a fully custom WordPress theme for FirmPilot from scratch using Figma designs. Built multiple responsive pages with unique, advanced animations powered by the GSAP library.',
+      'Converted the designs into a pixel-perfect website, implementing custom layouts, interactive elements, and tailored functionality. This project showcases my expertise in custom WordPress theme development, Figma-to-WordPress conversion, GSAP animations, responsive design, and advanced front-end development.',
+    ],
+  },
+  kombudrinks: {
+    detail: { w: 1448, h: 1086 },
+    body: [
+      'Developed a bilingual WordPress e-commerce website from scratch by converting Adobe XD designs into a custom WordPress theme. Built flexible theme customization options, custom metaobjects, and dynamic content management to let the client control website content directly from the backend.',
+      'Configured WPML for French and English language management and implemented custom card functionality. This project showcases my expertise in WordPress theme development, XD-to-WordPress conversion, ACF, multilingual e-commerce, and dynamic theme customization.',
+    ],
+  },
+};
+
 export const projects = rows.map(([slug, name, platform, category, domain, w, h]) => {
   const label = PLATFORMS[platform];
   const cleanDomain = domain.replace(/\/$/, '');
@@ -77,14 +113,23 @@ export const projects = rows.map(([slug, name, platform, category, domain, w, h]
     h,
     alt: name + ' website shown on desktop and mobile, built with ' + label,
     desc: label + ' website for ' + name + ', ' + category.charAt(0).toLowerCase() + category.slice(1) + '.',
+    ...(CASE_STUDIES[slug] && {
+      caseStudy: true,
+      alt: name + ' case study: website shown on desktop, laptop and mobile, built with ' + label,
+      detailImg: 'assets/work/' + slug + '-detail.webp',
+      detailW: CASE_STUDIES[slug].detail.w,
+      detailH: CASE_STUDIES[slug].detail.h,
+      detailAlt: name + ' case study: project highlights and tech stack, with the website on desktop, laptop and mobile',
+      body: CASE_STUDIES[slug].body,
+    }),
   };
 });
 
 export const byPlatform = (platform) => projects.filter((p) => p.platform === platform);
 
 const FEATURED = [
-  { slug: 'worldfirst', text: 'WordPress work for WorldFirst, the international payments brand within the Alibaba ecosystem, presented across desktop and mobile.' },
-  { slug: 'kombudrinks', text: 'Shopify storefront for a beverage brand, with product pages and layouts designed to show off the range.' },
+  { slug: 'worldfirst', text: 'Custom WordPress website for WorldFirst (Alibaba): Figma designs built in Elementor, a custom currency calculator, React front-end modules and REST API integrations.' },
+  { slug: 'kombudrinks', text: 'Bilingual WordPress e-commerce website built from Adobe XD as a custom theme, with ACF-powered content and WPML for French and English.' },
   { slug: 'leapevent', text: 'WordPress website for an event technology and booking platform.' },
   { slug: 'matplus', text: 'Hugo multisite for Matplus, a software and services company in materials innovation, built as fast static pages.' },
   { slug: 'domogummies', text: 'Shopify subscription store for a gummies brand, presented across desktop and mobile.' },

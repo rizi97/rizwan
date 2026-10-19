@@ -14,13 +14,20 @@ export default function ProjectModal({ list, index, onChange, onClose }) {
 
   return createPortal(
     <div className="dialog-backdrop" onClick={(e) => e.target === e.currentTarget && onClose()}>
-      <div ref={ref} className="project-dialog" role="dialog" aria-modal="true" aria-labelledby="project-dialog-title" tabIndex={-1}>
+      <div ref={ref} className={`project-dialog${p.caseStudy ? ' is-case-study' : ''}`} role="dialog" aria-modal="true" aria-labelledby="project-dialog-title" tabIndex={-1}>
         <div className="project-dialog-media">
-          <Img key={p.slug} src={p.img} w={p.w} h={p.h} alt={p.alt} eager />
+          {p.caseStudy ? (
+            <Img key={p.slug + '-detail'} src={p.detailImg} w={p.detailW} h={p.detailH} alt={p.detailAlt} eager />
+          ) : (
+            <Img key={p.slug} src={p.img} w={p.w} h={p.h} alt={p.alt} eager />
+          )}
         </div>
         <div className="project-dialog-body">
           <div className="project-dialog-top">
-            <span className="tag">{p.platformLabel}</span>
+            <span className="dialog-tags">
+              <span className="tag">{p.platformLabel}</span>
+              {p.caseStudy && <span className="tag tag-accent">Case study</span>}
+            </span>
             <button type="button" className="icon-btn" aria-label="Close project" onClick={onClose} data-autofocus="">
               <span aria-hidden="true">×</span>
             </button>
@@ -28,9 +35,17 @@ export default function ProjectModal({ list, index, onChange, onClose }) {
           <h2 id="project-dialog-title" className="project-dialog-title">
             {p.name}
           </h2>
-          <p className="muted">{p.desc}</p>
+          {p.caseStudy ? (
+            <div className="project-dialog-text">
+              {p.body.map((para) => (
+                <p key={para.slice(0, 24)}>{para}</p>
+              ))}
+            </div>
+          ) : (
+            <p className="muted">{p.desc}</p>
+          )}
           <dl className="facts">
-            <dt>Sector</dt>
+            <dt>Category</dt>
             <dd>{p.category}</dd>
             <dt>Platform</dt>
             <dd>{p.platformLabel}</dd>
