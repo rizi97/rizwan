@@ -100,7 +100,7 @@ export const seo = {
   '/work/shopify/': {
     title: 'Shopify Developer Portfolio | Rizwan',
     description:
-      'Live Shopify stores by Rizwan, including Wavvy Supply: Figma to custom Shopify 2.0 themes, Liquid sections, Google Maps store locators, metafields and subscription stores.',
+      'Live Shopify stores by Rizwan, including Wavvy Supply: Figma to custom Shopify 2.0 themes, Liquid sections, Google Maps store locators and metafields.',
     ogDescription: 'Live Shopify stores built and customized by Rizwan, from Figma to custom Shopify 2.0 themes.',
     image: 'assets/work/wavvysupply.webp',
     imageAlt: 'Wavvy Supply case study: custom Shopify 2.0 website shown on desktop, laptop and mobile',

@@ -43,7 +43,6 @@ const rows = [
   ["entouragecannabis", "Entourage", "wordpress", "Specialty retail", "entouragecannabis.com", 940, 788],
   ["wavvysupply", "Wavvy Supply", "shopify", "Figma to custom Shopify 2.0 theme", "wavvysupply.com", 1448, 1086],
   ["digitalzonesoftware", "Digital Zone Software", "shopify", "Software store", "digitalzonesoftware.com", 1080, 1420],
-  ["domogummies", "Domo Gummies", "shopify", "Subscription store", "domogummies.com", 1080, 1080],
   ["organicscarecrow", "Organic Scarecrow", "shopify", "Organic products", "organicscarecrow.com", 1080, 1080],
   ["woodstockresources", "Woodstock Resources", "shopify", "Wood products", "woodstockresources.com.au", 1080, 1080],
   ["bestabrasives", "Best Abrasives", "shopify", "Furniture, warehouse and tools", "bestabrasives.com.au", 1080, 1920],
@@ -144,7 +143,6 @@ const FEATURED = [
   { slug: 'kombudrinks', text: 'Bilingual WordPress e-commerce website built from Adobe XD as a custom theme, with ACF-powered content and WPML for French and English.' },
   { slug: 'leapevent', text: 'WordPress website for an event technology and booking platform.' },
   { slug: 'matplus', text: 'Hugo multisite for Matplus, a software and services company in materials innovation, built as fast static pages.' },
-  { slug: 'domogummies', text: 'Shopify subscription store for a gummies brand, presented across desktop and mobile.' },
 ];
 
 export const featured = FEATURED.map(({ slug, text }) => ({ ...projects.find((p) => p.slug === slug), summary: text }));

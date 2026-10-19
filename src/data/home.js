@@ -17,7 +17,7 @@ export const platformCards = [
     to: '/work/shopify/',
     name: 'Shopify',
     text: 'Custom Shopify 2.0 themes and online stores for food, retail and software brands.',
-    tags: ['Liquid themes', 'Custom sections', 'Subscriptions'],
+    tags: ['Shopify 2.0', 'Liquid themes', 'Custom sections'],
   },
   {
     id: 'hugo',

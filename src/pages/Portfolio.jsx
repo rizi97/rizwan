@@ -18,7 +18,7 @@ const COPY = {
   },
   shopify: {
     intro:
-      'Shopify stores for food, retail and software brands, built with Liquid themes, custom sections and subscription setups. Select a project to view it larger and browse the collection.',
+      'Shopify stores for food, retail and software brands, built with custom Shopify 2.0 Liquid themes and custom sections. Select a project to view it larger and browse the collection.',
     cta: 'Planning a new Shopify store or a theme rebuild?',
   },
   hugo: {
