@@ -2578,16 +2578,27 @@ h2.eyebrow {
   }
 }
 .project-dialog {
+  /* Desktop: image on the left, details on the right. The popup has a fixed
+     height that always fits the screen; the image is scaled to fit inside it
+     and only the text column scrolls when there is a lot of content. */
+  --dialog-pad: clamp(12px, 3vw, 40px);
+  --dialog-max-h: calc(100vh - 2 * var(--dialog-pad));
   width: min(1100px, 100%);
-  max-height: calc(100vh - 2 * clamp(12px, 3vw, 40px));
+  height: min(720px, var(--dialog-max-h));
   display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.5fr) minmax(320px, 1fr);
+  grid-template-rows: minmax(0, 1fr);
   border-radius: var(--radius-lg);
   background: var(--white);
   box-shadow: 0 40px 100px rgba(22, 27, 46, 0.35);
   overflow: hidden;
   outline: none;
   animation: pop-in 0.35s var(--ease);
+}
+@supports (height: 100dvh) {
+  .project-dialog {
+    --dialog-max-h: calc(100dvh - 2 * var(--dialog-pad));
+  }
 }
 @keyframes pop-in {
   from {
@@ -2596,29 +2607,63 @@ h2.eyebrow {
   }
 }
 .project-dialog-media {
-  background: var(--sand);
-  display: grid;
-  place-items: center;
-  padding: clamp(14px, 2.4vw, 30px);
   min-height: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(14px, 2.4vw, 30px);
+  background: var(--sand);
 }
 .project-dialog-media img {
-  max-height: calc(100vh - 140px);
+  display: block;
   width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
   border-radius: 10px;
 }
 .project-dialog-body {
-  padding: clamp(20px, 2.6vw, 34px);
+  min-height: 0;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  overflow-y: auto;
 }
 .project-dialog-top {
+  flex: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
+  padding: clamp(16px, 2vw, 24px) clamp(20px, 2.6vw, 32px) 12px;
+  background: var(--white);
+}
+.project-dialog-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 4px clamp(20px, 2.6vw, 32px) 20px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(22, 27, 46, 0.25) transparent;
+  /* Soft fade at the bottom edge hints that the text continues. */
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 24px), transparent);
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 24px), transparent);
+}
+.project-dialog-scroll > .btn {
+  align-self: flex-start;
+}
+.project-dialog-foot {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px clamp(20px, 2.6vw, 32px) clamp(16px, 2vw, 22px);
+  border-top: 1px solid var(--line);
+  background: var(--white);
 }
 .project-dialog-title {
   font-family: var(--font-display);
@@ -2650,16 +2695,12 @@ h2.eyebrow {
   font-weight: 600;
   overflow-wrap: anywhere;
 }
-.project-dialog-body > .btn {
-  align-self: flex-start;
-}
 .dialog-nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  margin-top: auto;
 }
 .dialog-count {
   font-family: var(--font-mono);
@@ -2669,14 +2710,43 @@ h2.eyebrow {
 .dialog-hint {
   font-size: 12.5px;
   color: var(--muted);
+  text-align: center;
 }
-@media (max-width: 800px) {
+
+/* Phones and small tablets: one column. The full image sits on top at full
+   width, and the whole popup scrolls; the tag/close bar sticks to the top. */
+@media (max-width: 900px) {
   .project-dialog {
-    grid-template-columns: 1fr;
-    max-height: none;
+    height: auto;
+    max-height: var(--dialog-max-h);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .project-dialog-media {
+    height: auto;
+    flex: none;
   }
   .project-dialog-media img {
-    max-height: 52vh;
+    width: 100%;
+    max-height: none;
+  }
+  .project-dialog-body {
+    flex: none;
+  }
+  .project-dialog-top {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 14px;
+  }
+  .project-dialog-scroll {
+    overflow: visible;
+    padding-top: 16px;
+    mask-image: none;
+    -webkit-mask-image: none;
   }
   .dialog-hint {
     display: none;
@@ -2781,18 +2851,17 @@ h2.eyebrow {
   background: var(--accent-wash);
 }
 .project-dialog.is-case-study {
+  /* Height follows the 4:3 detail image so it fills its column with no empty
+     bands, but never taller than the screen and never too short for the text. */
   width: min(1240px, 100%);
-  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+  height: min(max(calc(min(1240px, 100vw - 2 * var(--dialog-pad)) * 0.4559), 500px), var(--dialog-max-h));
+  grid-template-columns: minmax(0, 1.55fr) minmax(340px, 1fr);
 }
 .project-dialog.is-case-study .project-dialog-media {
   padding: 0;
   background: #0f1117;
 }
 .project-dialog.is-case-study .project-dialog-media img {
-  width: 100%;
-  height: 100%;
-  max-height: calc(100vh - 2 * clamp(12px, 3vw, 40px));
-  object-fit: contain;
   border-radius: 0;
 }
 .project-dialog-text {
@@ -2803,12 +2872,9 @@ h2.eyebrow {
   line-height: 1.7;
   color: var(--text);
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .project-dialog.is-case-study {
-    grid-template-columns: 1fr;
-  }
-  .project-dialog.is-case-study .project-dialog-media img {
-    max-height: none;
+    width: 100%;
     height: auto;
   }
 }
