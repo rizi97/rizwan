@@ -93,8 +93,10 @@ export const seo = {
     description:
       'Live WordPress and WooCommerce websites by Rizwan: custom themes, Elementor and page builder builds, publications, charities and eCommerce stores.',
     ogDescription: 'Live WordPress and WooCommerce websites built and customized by Rizwan.',
-    image: 'assets/work/worldfirst.webp',
-    imageAlt: 'WorldFirst website shown on desktop and mobile, built with WordPress',
+    image: 'assets/social/og-wordpress.jpg',
+    imageW: 1200,
+    imageH: 630,
+    imageAlt: 'WordPress Developer Portfolio by Rizwan, featuring the WorldFirst case study',
     jsonLd: portfolio('/work/wordpress/', 'WordPress Developer Portfolio', 'WordPress portfolio'),
   },
   '/work/shopify/': {
@@ -102,16 +104,20 @@ export const seo = {
     description:
       'Live Shopify stores by Rizwan, including Wavvy Supply: Figma to custom Shopify 2.0 themes, Liquid sections, Google Maps store locators and metafields.',
     ogDescription: 'Live Shopify stores built and customized by Rizwan, from Figma to custom Shopify 2.0 themes.',
-    image: 'assets/work/wavvysupply.webp',
-    imageAlt: 'Wavvy Supply case study: custom Shopify 2.0 website shown on desktop, laptop and mobile',
+    image: 'assets/social/og-shopify.jpg',
+    imageW: 1200,
+    imageH: 630,
+    imageAlt: 'Shopify Developer Portfolio by Rizwan, featuring the Wavvy Supply case study',
     jsonLd: portfolio('/work/shopify/', 'Shopify Developer Portfolio', 'Shopify portfolio'),
   },
   '/work/hugo/': {
     title: 'Hugo Website Developer Portfolio | Rizwan',
     description: 'Live Hugo websites by Rizwan: fast static sites and multisites for companies, SaaS products, law firms and publishers.',
     ogDescription: 'Live Hugo static websites and multisites built by Rizwan.',
-    image: 'assets/work/matplus.webp',
-    imageAlt: 'Matplus website shown on desktop and mobile, built with Hugo',
+    image: 'assets/social/og-hugo.jpg',
+    imageW: 1200,
+    imageH: 630,
+    imageAlt: 'Hugo Website Developer Portfolio by Rizwan, featuring the Matplus website',
     jsonLd: portfolio('/work/hugo/', 'Hugo Website Developer Portfolio', 'Hugo portfolio'),
   },
   404: {
