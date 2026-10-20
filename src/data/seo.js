@@ -1,7 +1,7 @@
 // One entry per route: title, description, social image and structured data.
 // Used at build time (pre-rendered into each page's <head>) and in the browser
 // when navigating between pages.
-import { PERSON, CONTACT, SAME_AS } from '../config/site.js';
+import { PERSON, CONTACT, SAME_AS, INTRO_VIDEO } from '../config/site.js';
 import { absUrl } from '../lib/paths.js';
 import { faqs } from './home.js';
 
@@ -69,9 +69,24 @@ export const seo = {
     preload: { src: 'assets/img/rizwan-seated.webp', small: 'assets/img/rizwan-seated-480.webp', mid: 'assets/img/rizwan-seated-640.webp', sizes: '(max-width: 940px) 92vw, 480px' },
     jsonLd: {
       '@context': 'https://schema.org',
-      '@type': 'ProfilePage',
-      url: absUrl('/about/'),
-      mainEntity: { ...person, image: absUrl('/assets/img/rizwan-seated.webp') },
+      '@graph': [
+        {
+          '@type': 'ProfilePage',
+          url: absUrl('/about/'),
+          mainEntity: { ...person, image: absUrl('/assets/img/rizwan-seated.webp') },
+        },
+        {
+          '@type': 'VideoObject',
+          name: INTRO_VIDEO.title,
+          description: INTRO_VIDEO.description,
+          thumbnailUrl: `https://i.ytimg.com/vi/${INTRO_VIDEO.id}/maxresdefault.jpg`,
+          uploadDate: INTRO_VIDEO.uploadDate,
+          duration: INTRO_VIDEO.duration,
+          embedUrl: `https://www.youtube.com/embed/${INTRO_VIDEO.id}`,
+          contentUrl: `https://www.youtube.com/watch?v=${INTRO_VIDEO.id}`,
+          author: { '@id': personId },
+        },
+      ],
     },
   },
   '/contact/': {

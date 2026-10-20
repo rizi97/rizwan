@@ -34,3 +34,14 @@ export const DEV_PROFILES = [
 ];
 
 export const SAME_AS = [...SOCIAL, ...DEV_PROFILES].map((s) => s.url);
+
+// Intro video on YouTube. Shown on the About page and from the homepage hero.
+export const INTRO_VIDEO = {
+  id: 'ror0x3jNCr8',
+  title: 'Rizwan: Full-Stack Web Developer | WordPress, Shopify & Website Designer',
+  description:
+    'A one-minute introduction to Rizwan, a full stack web developer: the platforms he works with (WordPress, WooCommerce, Shopify, Hugo), business tool integrations, his process from planning to maintenance, and why clients work with him.',
+  uploadDate: '2026-10-20T16:15:12-07:00',
+  duration: 'PT55S',
+  durationLabel: '0:55',
+};

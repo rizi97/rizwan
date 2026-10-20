@@ -4,6 +4,7 @@ import Img from '../components/Img.jsx';
 import SectionHead from '../components/SectionHead.jsx';
 import Lightbox from '../components/Lightbox.jsx';
 import CtaBand from '../components/CtaBand.jsx';
+import { IntroVideoInline } from '../components/IntroVideo.jsx';
 import { BrandIcon } from '../components/Icons.jsx';
 import { certificates, recognition, formatDate } from '../data/credentials.js';
 import { agencies } from '../data/home.js';
@@ -96,6 +97,34 @@ export default function About() {
               />
             </div>
           </figure>
+        </div>
+      </section>
+
+      <section id="intro-video" className="section section-white" aria-labelledby="video-title">
+        <div className="container video-intro">
+          <div className="video-intro-copy">
+            <p className="eyebrow" data-reveal="">
+              Video intro
+            </p>
+            <h2 id="video-title" className="section-title" data-reveal="">
+              Meet me in one minute.
+            </h2>
+            <p data-reveal="">
+              A short introduction to who I am, the platforms I work with, the tools I integrate and how I take a project from planning
+              to launch and ongoing maintenance.
+            </p>
+            <div className="btn-row" data-reveal="">
+              <Link to="/contact/" className="btn btn-primary">
+                Discuss Your Project
+              </Link>
+              <Link to="/contact/#book" className="btn btn-ghost">
+                Book a Call
+              </Link>
+            </div>
+          </div>
+          <div data-reveal="scale">
+            <IntroVideoInline />
+          </div>
         </div>
       </section>
 

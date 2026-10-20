@@ -17,7 +17,7 @@ const rows = [
   ["tegmade", "TEG Made", "wordpress", "Brand and products website", "tegmade.com", 1448, 1086],
   ["kombudrinks", "Kombu Drinks", "wordpress", "Bilingual WordPress e-commerce", "kombudrinks.com", 1448, 1086],
   ["mudaustralia", "MUD Australia", "wordpress", "Ceramics brand", "mudaustralia.com", 1640, 924],
-  ["leapevent", "Leap Event", "wordpress", "Event booking platform", "leapevent.tech", 1280, 720],
+  ["leapevent", "Leap Event", "wordpress", "Website maintenance and optimization", "leapevent.tech", 1448, 1086],
   ["wasteco", "WasteCo", "wordpress", "Cleaning services", "wasteco.net", 1280, 720],
   ["citrusbits", "CitrusBits", "wordpress", "Technology agency", "citrusbits.com", 1080, 1080],
   ["aytam-damad", "Aytam Damad", "wordpress", "Arabic RTL website", "aytam-damad.org.sa", 1080, 1080],
@@ -65,6 +65,13 @@ const VARIANT_MIN = 740;
 
 // Case studies: a designed detail image for the popup plus the project write-up.
 const CASE_STUDIES = {
+  leapevent: {
+    detail: { w: 1448, h: 1086 },
+    body: [
+      'I completed a comprehensive maintenance and optimization project for an outdated website, resolving plugin, theme, and database issues. I updated core components, fixed bugs, and restored broken functionality.',
+      'The calendar and event booking system were also malfunctioning, preventing users from booking events. I troubleshot and resolved these issues, ensuring smooth booking functionality and improving the website’s overall performance, stability, reliability, and user experience.',
+    ],
+  },
   wavvysupply: {
     detail: { w: 1448, h: 1086 },
     body: [
@@ -141,7 +148,10 @@ const FEATURED = [
     text: 'Figma designs converted into a fully custom Shopify 2.0 theme for Wavvy Supply, with custom Liquid sections, tailored product pages and cart, and a Google Maps store locator.',
   },
   { slug: 'kombudrinks', text: 'Bilingual WordPress e-commerce website built from Adobe XD as a custom theme, with ACF-powered content and WPML for French and English.' },
-  { slug: 'leapevent', text: 'WordPress website for an event technology and booking platform.' },
+  {
+    slug: 'leapevent',
+    text: 'Maintenance and optimization of an outdated WordPress event website: plugins, theme and database updated, bugs fixed, and the calendar and event booking system restored.',
+  },
   { slug: 'matplus', text: 'Hugo multisite for Matplus, a software and services company in materials innovation, built as fast static pages.' },
 ];
 

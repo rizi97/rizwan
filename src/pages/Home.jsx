@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Img from '../components/Img.jsx';
 import SectionHead from '../components/SectionHead.jsx';
 import ProjectModal from '../components/ProjectModal.jsx';
+import { IntroVideoButton } from '../components/IntroVideo.jsx';
 import { Arrow, BrandIcon } from '../components/Icons.jsx';
 import { featured } from '../data/projects.js';
 import { CONTACT } from '../config/site.js';
@@ -61,6 +62,9 @@ function Hero() {
             <a href="#work" className="btn btn-outline btn-lg" data-magnetic="">
               Explore My Work
             </a>
+          </div>
+          <div data-reveal="" data-delay="450">
+            <IntroVideoButton />
           </div>
           <div className="hero-facts" data-reveal="" data-delay="500">
             <span>
