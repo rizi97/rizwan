@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Holiday Sale Page Demo | Rizwan, Shopify &amp; WooCommerce Developer</title>
+<meta name="description" content="A demo seasonal sale landing page by Rizwan: Black Friday, Christmas and New Year campaigns with a live countdown timer, product grid, cart and free-shipping progress. Built for Shopify and WooCommerce stores.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://mrizwanaslam.com/demo/holiday-sale/">
+<meta property="og:title" content="Holiday Sale Page Demo by Rizwan">
+<meta property="og:description" content="Black Friday, Christmas and New Year sale page with countdown timer and product grid.">
+<meta property="og:image" content="https://mrizwanaslam.com/demo/holiday-sale/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Bricolage';src:url(fonts/bricolage.woff2) format('woff2-variations');font-weight:200 800;font-display:swap}
+@font-face{font-family:'Manrope';src:url(fonts/manrope.woff2) format('woff2-variations');font-weight:200 800;font-display:swap}
+:root{
+  --bg:#0b0b10;--bg2:#15151d;--card:#1b1b25;--text:#f5f5f7;--muted:#a3a3b2;--line:rgba(255,255,255,.1);
+  --accent:#ffd60a;--accent-ink:#0b0b10;--hot:#ff3b30;--chip:rgba(255,214,10,.12);
+  --radius:18px;--font:'Manrope',system-ui,sans-serif;--display:'Bricolage','Manrope',system-ui,sans-serif;
+}
+body[data-theme="christmas"]{
+  --bg:#0d3326;--bg2:#124333;--card:#fffaf2;--text:#fffaf2;--muted:#cfe3d6;--line:rgba(255,255,255,.14);
+  --accent:#e63946;--accent-ink:#fff;--hot:#e63946;--chip:rgba(242,193,78,.16);--gold:#f2c14e;
+}
+body[data-theme="newyear"]{
+  --bg:#120a2a;--bg2:#1d1242;--card:#21184a;--text:#fbf7ff;--muted:#bdb3dc;--line:rgba(255,255,255,.12);
+  --accent:#f5c76b;--accent-ink:#1a1033;--hot:#ff5c8a;--chip:rgba(245,199,107,.14);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased;transition:background .5s}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+img,svg{display:block}
+.wrap{width:min(1200px,100% - 32px);margin-inline:auto}
+
+/* Demo notice */
+.demo-bar{background:#fff;color:#161b2e;font-size:13px;text-align:center;padding:8px 16px}
+.demo-bar a{font-weight:700;color:#6d3fd8}
+
+/* Announcement marquee */
+.announce{background:var(--accent);color:var(--accent-ink);font-family:var(--display);font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;overflow:hidden;white-space:nowrap}
+.announce-track{display:inline-flex;gap:48px;padding:9px 0;animation:marquee 28s linear infinite}
+.announce-track span:after{content:"✦";margin-left:48px;opacity:.6}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* Header */
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.head{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.brand{font-family:var(--display);font-weight:800;font-size:24px;letter-spacing:-.02em;text-decoration:none}
+.brand i{font-style:normal;color:var(--accent)}
+nav{display:flex;gap:28px;font-size:15px;font-weight:500;color:var(--muted)}
+nav a{text-decoration:none}nav a:hover{color:var(--text)}
+.cart-btn{position:relative;display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:transparent;color:var(--text);padding:9px 16px;border-radius:999px;font-weight:600;font-size:14px}
+.cart-count{min-width:22px;height:22px;border-radius:99px;background:var(--accent);color:var(--accent-ink);font-size:12px;font-weight:800;display:grid;place-items:center;padding:0 6px;transition:transform .25s}
+.cart-count.bump{transform:scale(1.35)}
+
+/* Campaign switcher */
+.switcher{display:flex;justify-content:center;padding:18px 0 0}
+.switch{display:inline-flex;gap:4px;padding:5px;border-radius:999px;background:var(--bg2);border:1px solid var(--line)}
+.switch button{border:0;background:transparent;color:var(--muted);padding:9px 18px;border-radius:999px;font-weight:600;font-size:14px;transition:.25s}
+.switch button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;padding:56px 0 72px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;position:relative;z-index:2}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);background:var(--chip);border:1px solid color-mix(in srgb,var(--accent) 35%,transparent);padding:7px 14px;border-radius:999px}
+.eyebrow .pulse{width:8px;height:8px;border-radius:50%;background:var(--hot);box-shadow:0 0 0 0 var(--hot);animation:pulse 1.6s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px transparent}100%{box-shadow:0 0 0 0 transparent}}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(44px,6.6vw,92px);line-height:.95;letter-spacing:-.035em;margin:22px 0 18px}
+h1 em{font-style:normal;color:var(--accent)}
+.lead{font-size:clamp(16px,1.4vw,19px);color:var(--muted);max-width:520px}
+.countdown{display:flex;gap:12px;margin:30px 0 28px}
+.unit{min-width:86px;text-align:center;background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:14px 10px 10px}
+.unit b{display:block;font-family:var(--display);font-size:clamp(32px,3.4vw,44px);font-weight:800;line-height:1;font-variant-numeric:tabular-nums}
+.unit small{display:block;margin-top:6px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.cd-label{font-size:14px;color:var(--muted);margin-top:30px}
+.cd-label + .countdown{margin-top:12px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:16px 28px;font-weight:700;font-size:16px;text-decoration:none;border:1px solid transparent;transition:transform .2s,box-shadow .2s}
+.btn-main{background:var(--accent);color:var(--accent-ink);box-shadow:0 12px 30px color-mix(in srgb,var(--accent) 35%,transparent)}
+.btn-main:hover{transform:translateY(-2px)}
+.code{display:inline-flex;align-items:center;gap:10px;border:1px dashed color-mix(in srgb,var(--accent) 60%,transparent);border-radius:999px;padding:8px 8px 8px 18px;font-size:14px;color:var(--muted);background:transparent}
+.code strong{color:var(--text);font-family:var(--display);letter-spacing:.08em}
+.code span.copy{background:var(--chip);color:var(--accent);border-radius:99px;padding:7px 12px;font-weight:700;font-size:12px}
+
+.hero-art{position:relative;aspect-ratio:1;max-width:480px;justify-self:center;width:100%}
+.disc{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 35% 30%,color-mix(in srgb,var(--accent) 55%,transparent),transparent 60%),var(--bg2);border:1px solid var(--line)}
+.big-off{position:absolute;inset:0;display:grid;place-items:center;text-align:center}
+.big-off .pct{font-family:var(--display);font-weight:800;font-size:clamp(110px,15vw,190px);line-height:.8;letter-spacing:-.05em;color:var(--accent)}
+.big-off .pct sup{font-size:.38em;vertical-align:top;margin-left:4px}
+.big-off .off{font-family:var(--display);font-weight:800;font-size:clamp(30px,3.5vw,46px);letter-spacing:.2em;margin-top:6px}
+.big-off .sub{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+.sticker{position:absolute;right:2%;top:6%;width:118px;height:118px;border-radius:50%;background:var(--hot);color:#fff;display:grid;place-items:center;text-align:center;font-family:var(--display);font-weight:800;font-size:15px;line-height:1.1;transform:rotate(12deg);box-shadow:0 14px 30px rgba(0,0,0,.35);animation:wobble 4s ease-in-out infinite}
+@keyframes wobble{50%{transform:rotate(-6deg) scale(1.04)}}
+.fx{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
+
+/* Perks */
+.perks{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:56px;position:relative;z-index:2}
+.perk{display:flex;gap:12px;align-items:center;background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:14px;color:var(--muted)}
+.perk b{display:block;color:var(--text);font-size:15px}
+.perk .ic{flex:none;width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:var(--chip);color:var(--accent);font-size:18px}
+
+/* Shop */
+.shop{padding:72px 0 40px}
+.shop-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:22px}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(30px,3.6vw,46px);letter-spacing:-.03em;line-height:1}
+.shop-head p{color:var(--muted);margin-top:8px}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filters button{border:1px solid var(--line);background:transparent;color:var(--muted);padding:9px 16px;border-radius:999px;font-weight:600;font-size:14px}
+.filters button[aria-pressed="true"]{border-color:var(--accent);color:var(--text);background:var(--chip)}
+.ship{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:24px;font-size:14px;color:var(--muted)}
+.ship b{color:var(--text)}
+.bar{height:8px;border-radius:99px;background:var(--line);margin-top:10px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--hot));border-radius:99px;transition:width .5s}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:var(--card);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;border:1px solid var(--line);transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(0,0,0,.28)}
+body[data-theme="christmas"] .card{color:#14281f}
+body[data-theme="christmas"] .card .was,body[data-theme="christmas"] .card .meta,body[data-theme="christmas"] .card .stars span,body[data-theme="christmas"] .card .stock{color:#5d6f66}
+body[data-theme="christmas"] .card .bar{background:#e7e1d6}
+body[data-theme="christmas"] .eyebrow,body[data-theme="christmas"] .code span.copy,body[data-theme="christmas"] .perk .ic{color:var(--gold)}
+body[data-theme="christmas"] .eyebrow{border-color:rgba(242,193,78,.4)}
+body[data-theme="christmas"] h1 em,body[data-theme="christmas"] .big-off .pct{color:var(--gold)}
+.thumb{position:relative;aspect-ratio:1;display:grid;place-items:center;overflow:hidden}
+.thumb svg{width:72%;height:72%;transition:transform .4s}
+.card:hover .thumb svg{transform:scale(1.06) rotate(-2deg)}
+.badge{position:absolute;left:12px;top:12px;background:var(--hot);color:#fff;font-family:var(--display);font-weight:800;font-size:13px;padding:5px 10px;border-radius:8px}
+.badge.alt{left:auto;right:12px;background:#111;color:#fff}
+.heart{position:absolute;right:12px;bottom:12px;width:38px;height:38px;border-radius:50%;border:0;background:rgba(255,255,255,.9);color:#161b2e;display:grid;place-items:center;font-size:17px;transition:transform .2s}
+.heart[aria-pressed="true"]{color:#e63946}
+.heart:hover{transform:scale(1.1)}
+.info{padding:16px 16px 18px;display:flex;flex-direction:column;gap:6px;flex:1}
+.meta{font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.name{font-weight:700;font-size:16px}
+.stars{font-size:13px;color:#f5a524;letter-spacing:1px}
+.stars span{color:var(--muted);letter-spacing:0;margin-left:4px}
+.price{display:flex;align-items:baseline;gap:8px;margin-top:2px}
+.now{font-family:var(--display);font-weight:800;font-size:22px;color:var(--hot)}
+.was{text-decoration:line-through;color:var(--muted);font-size:14px}
+.stock{font-size:12px;color:var(--muted);margin-top:4px}
+.stock .bar{height:5px;margin-top:6px}
+.add{margin-top:auto;border:0;border-radius:12px;padding:13px;font-weight:700;font-size:15px;background:var(--accent);color:var(--accent-ink);transition:filter .2s,transform .2s}
+.add:hover{filter:brightness(1.08)}
+.add:active{transform:scale(.97)}
+.add.done{background:#22c55e;color:#fff}
+.info .add{margin-top:12px}
+
+/* Bottom banner */
+.final{margin:56px 0 72px;border-radius:28px;padding:48px;background:linear-gradient(120deg,var(--bg2),color-mix(in srgb,var(--accent) 22%,var(--bg2)));border:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.final p{color:var(--muted);margin-top:8px}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{font-weight:700;color:var(--text)}
+
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,24px);opacity:0;visibility:hidden;background:#fff;color:#161b2e;padding:12px 18px;border-radius:12px;font-weight:600;font-size:14px;box-shadow:0 18px 40px rgba(0,0,0,.35);transition:transform .35s,opacity .35s,visibility .35s;z-index:50}
+.toast.show{transform:translate(-50%,0);opacity:1;visibility:visible}
+
+@media (max-width:1000px){.grid{grid-template-columns:repeat(3,1fr)}.perks{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:820px){
+  nav{display:none}
+  .hero{padding:36px 0 56px}
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .hero-art{max-width:340px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .final{padding:32px 24px}
+}
+@media (max-width:520px){
+  .unit{min-width:0;flex:1;padding:12px 4px 8px}
+  .countdown{gap:8px}
+  .switch button{padding:8px 12px;font-size:13px}
+  .perks{grid-template-columns:1fr}
+  .info{padding:12px}
+  .name{font-size:14px}
+  .now{font-size:19px}
+  .sticker{width:92px;height:92px;font-size:12px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body data-theme="blackfriday">
+
+<div class="demo-bar">Demo sale page by <a href="/">Rizwan</a>, Shopify &amp; WooCommerce developer. "Lumen &amp; Co." is a fictional store. <a href="/contact/">Want one for your store? →</a></div>
+
+<div class="announce" aria-hidden="true"><div class="announce-track" id="announce"></div></div>
+
+<header>
+  <div class="wrap head">
+    <a class="brand" href="#top">Lumen<i>&amp;</i>Co.</a>
+    <nav aria-label="Store"><a href="#shop">Shop the sale</a><a href="#shop">Bestsellers</a><a href="#shop">Gift guide</a><a href="#shop">Gift cards</a></nav>
+    <button class="cart-btn" type="button" aria-label="Cart">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
+      Cart <span class="cart-count" id="count">0</span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap switcher">
+    <div class="switch" role="group" aria-label="Choose a campaign">
+      <button type="button" data-set="blackfriday">Black Friday</button>
+      <button type="button" data-set="christmas">Christmas</button>
+      <button type="button" data-set="newyear">New Year</button>
+    </div>
+  </div>
+
+  <section class="hero">
+    <canvas class="fx" id="fx" aria-hidden="true"></canvas>
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow"><span class="pulse"></span><span id="eyebrow"></span></span>
+        <h1 id="title"></h1>
+        <p class="lead" id="lead"></p>
+        <p class="cd-label" id="cdLabel"></p>
+        <div class="countdown" role="timer" aria-live="off">
+          <div class="unit"><b id="d">00</b><small>Days</small></div>
+          <div class="unit"><b id="h">00</b><small>Hours</small></div>
+          <div class="unit"><b id="m">00</b><small>Mins</small></div>
+          <div class="unit"><b id="s">00</b><small>Secs</small></div>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-main" href="#shop">Shop the sale →</a>
+          <button class="code" type="button" id="codeBtn">Use code <strong id="code"></strong><span class="copy">Copy</span></button>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="disc"></div>
+        <div class="big-off"><div><div class="pct" id="pct">60<sup>%</sup></div><div class="off">OFF</div><div class="sub" id="artSub"></div></div></div>
+        <div class="sticker" id="sticker"></div>
+      </div>
+    </div>
+    <div class="wrap perks">
+      <div class="perk"><span class="ic">🚚</span><div><b>Free shipping</b>On orders over $75</div></div>
+      <div class="perk"><span class="ic">🎁</span><div><b>Free gift wrap</b>Ready to give</div></div>
+      <div class="perk"><span class="ic">↺</span><div><b>Extended returns</b>Until January 31</div></div>
+      <div class="perk"><span class="ic">🔒</span><div><b>Secure checkout</b>Cards, PayPal, Apple Pay</div></div>
+    </div>
+  </section>
+
+  <section class="shop" id="shop">
+    <div class="wrap">
+      <div class="shop-head">
+        <div><h2 id="shopTitle"></h2><p>Limited stock at these prices. Once it’s gone, it’s gone.</p></div>
+        <div class="filters" role="group" aria-label="Filter products">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="home" aria-pressed="false">Home</button>
+          <button type="button" data-filter="tech" aria-pressed="false">Tech</button>
+          <button type="button" data-filter="style" aria-pressed="false">Style</button>
+        </div>
+      </div>
+      <div class="ship" id="ship"></div>
+      <div class="grid" id="grid"></div>
+
+      <div class="final">
+        <div><h2 id="finalTitle"></h2><p>Sale ends when the timer hits zero. Prices return to normal after.</p></div>
+        <a class="btn btn-main" href="#shop">Grab your deals →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Lumen &amp; Co. — a fictional demo store. No real orders are taken.</span>
+    <span>Designed &amp; built by <a href="/">Rizwan</a> · <a href="/work/shopify/">Shopify work</a> · <a href="/contact/">Hire me</a></span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(() => {
+const year = new Date().getFullYear();
+const next = (m, d) => { const now = new Date(); let t = new Date(year, m, d); if (t <= now) t = new Date(year + 1, m, d); return t; };
+// Black Friday = day after the 4th Thursday of November.
+const blackFriday = () => { const calc = (y) => { const d = new Date(y, 10, 1); const firstThu = 1 + ((4 - d.getDay() + 7) % 7); return new Date(y, 10, firstThu + 22); }; let t = calc(year); return t <= new Date() ? calc(year + 1) : t; };
+
+const CAMPAIGNS = {
+  blackfriday: {
+    eyebrow: 'Black Friday · Live now', title: 'The biggest sale <em>of the year.</em>',
+    lead: 'Up to 60% off bestsellers across home, tech and style. Early access deals drop every hour until Cyber Monday.',
+    cdLabel: 'Black Friday doors open in', target: blackFriday, code: 'BLACK60', pct: 60, artSub: 'Sitewide deals', sticker: 'Doorbuster<br>deals',
+    shop: 'Black Friday deals', final: 'Don’t miss Black Friday.',
+    announce: ['Black Friday: up to 60% off', 'Free shipping over $75', 'Code BLACK60 at checkout', 'Extended returns until Jan 31'],
+  },
+  christmas: {
+    eyebrow: 'Christmas gift sale', title: 'Gifts they’ll <em>actually love.</em>',
+    lead: 'Hand-picked gifts at up to 40% off, with free gift wrap on every order. Order by December 18 for delivery before Christmas.',
+    cdLabel: 'Christmas is in', target: () => next(11, 25), code: 'JOLLY40', pct: 40, artSub: 'Holiday gifting', sticker: 'Free gift<br>wrap',
+    shop: 'Christmas gift shop', final: 'Make this Christmas merry.',
+    announce: ['Christmas gift sale: up to 40% off', 'Free gift wrap on every order', 'Order by Dec 18 for Christmas delivery', 'Code JOLLY40 at checkout'],
+  },
+  newyear: {
+    eyebrow: 'New Year sale', title: 'New year. <em>New favourites.</em>',
+    lead: 'Start the year with up to 50% off everything you need for a fresh start, from desk upgrades to everyday essentials.',
+    cdLabel: 'The countdown to the New Year', target: () => next(0, 1), code: 'NEWYEAR50', pct: 50, artSub: 'Fresh start deals', sticker: `Hello<br>${year + (new Date().getMonth() === 0 ? 0 : 1)}`,
+    shop: 'New Year deals', final: 'Start the year with a deal.',
+    announce: ['New Year sale: up to 50% off', 'Code NEWYEAR50 at checkout', 'Free shipping over $75', 'New arrivals every week'],
+  },
+};
+
+// Product art: simple inline SVG illustrations so the page has no image downloads.
+const ART = {
+  mug: (c) => `<svg viewBox="0 0 200 200"><ellipse cx="100" cy="172" rx="62" ry="9" fill="#000" opacity=".12"/><path d="M52 64h86v74a26 26 0 0 1-26 26H78a26 26 0 0 1-26-26z" fill="${c}"/><path d="M138 82h12a20 20 0 0 1 0 40h-12" fill="none" stroke="${c}" stroke-width="12"/><rect x="52" y="58" width="86" height="12" rx="6" fill="#fff" opacity=".35"/><path d="M80 44c-6-8 6-12 0-22M100 44c-6-8 6-12 0-22M120 44c-6-8 6-12 0-22" stroke="#fff" stroke-width="5" stroke-linecap="round" fill="none" opacity=".8"/><circle cx="95" cy="112" r="16" fill="#fff" opacity=".85"/><path d="M95 104v16M87 112h16" stroke="${c}" stroke-width="4" stroke-linecap="round"/></svg>`,
+  headphones: (c) => `<svg viewBox="0 0 200 200"><ellipse cx="100" cy="176" rx="64" ry="8" fill="#000" opacity=".12"/><path d="M44 112V96a56 56 0 0 1 112 0v16" fill="none" stroke="#22252f" stroke-width="12" stroke-linecap="round"/><rect x="30" y="100" width="34" height="62" rx="16" fill="${c}"/><rect x="136" y="100" width="34" height="62" rx="16" fill="${c}"/><rect x="38" y="112" width="12" height="38" rx="6" fill="#fff" opacity=".35"/><rect x="150" y="112" width="12" height="38" rx="6" fill="#fff" opacity=".35"/></svg>`,
+  watch: (c) => `<svg viewBox="0 0 200 200"><ellipse cx="100" cy="182" rx="40" ry="6" fill="#000" opacity=".12"/><rect x="74" y="18" width="52" height="56" rx="12" fill="${c}"/><rect x="74" y="126" width="52" height="56" rx="12" fill="${c}"/><rect x="58" y="58" width="84" height="84" rx="24" fill="#22252f"/><rect x="66" y="66" width="68" height="68" rx="18" fill="#0d0f16"/><text x="100" y="106" text-anchor="middle" font-family="Bricolage,Arial" font-weight="800" font-size="22" fill="#fff">10:09</text><path d="M80 116h40" stroke="${c}" stroke-width="4" stroke-linecap="round"/><rect x="142" y="88" width="8" height="22" rx="4" fill="#22252f"/></svg>`,
+  candle: (c) => `<svg viewBox="0 0 200 200"><ellipse cx="100" cy="176" rx="56" ry="9" fill="#000" opacity=".12"/><path d="M100 30c14 16 12 30 0 36-12-6-14-20 0-36z" fill="#ffb703"/><path d="M100 44c6 8 5 14 0 17-5-3-6-9 0-17z" fill="#fff3c4"/><rect x="98" y="62" width="4" height="14" fill="#333"/><rect x="56" y="74" width="88" height="96" rx="14" fill="${c}"/><rect x="56" y="74" width="88" height="14" rx="7" fill="#fff" opacity=".4"/><rect x="70" y="108" width="60" height="40" rx="6" fill="#fff" opacity=".92"/><text x="100" y="125" text-anchor="middle" font-family="Bricolage,Arial" font-weight="800" font-size="11" fill="#333">CEDAR</text><text x="100" y="140" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">&amp; FIG</text></svg>`,
+  sneaker: (c) => `<svg viewBox="0 0 200 200"><ellipse cx="100" cy="152" rx="80" ry="8" fill="#000" opacity=".12"/><path d="M26 136c0-20 6-46 22-60 10 4 18 14 30 16 16 2 30 14 52 24 20 8 44 10 44 26v6H26z" fill="${c}"/><path d="M24 138h152v10a6 6 0 0 1-6 6H30a6 6 0 0 1-6-6z" fill="#fff"/><path d="M70 96l8 12M84 100l8 12M98 106l8 12" stroke="#fff" stroke-width="5" stroke-linecap="round"/><path d="M120 128c14 0 30 2 44 6" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".6"/></svg>`,
+  backpack: (c) => `<svg viewBox="0 0 200 200"><ellipse cx="100" cy="180" rx="56" ry="8" fill="#000" opacity=".12"/><path d="M78 40a22 22 0 0 1 44 0" fill="none" stroke="#22252f" stroke-width="8"/><rect x="48" y="40" width="104" height="136" rx="30" fill="${c}"/><rect x="64" y="104" width="72" height="52" rx="12" fill="#000" opacity=".15"/><rect x="64" y="104" width="72" height="12" rx="6" fill="#fff" opacity=".3"/><rect x="92" y="122" width="16" height="8" rx="4" fill="#fff" opacity=".8"/><path d="M64 70h72" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".45"/></svg>`,
+  lamp: (c) => `<svg viewBox="0 0 200 200"><ellipse cx="100" cy="178" rx="54" ry="8" fill="#000" opacity=".12"/><rect x="58" y="160" width="84" height="16" rx="8" fill="#22252f"/><path d="M100 164 72 104l46-40" fill="none" stroke="#22252f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="72" cy="104" r="8" fill="#22252f"/><path d="M104 40l44 18-14 34-44-18z" fill="${c}"/><path d="M126 92l-14 34" stroke="#ffd166" stroke-width="18" opacity=".25" stroke-linecap="round"/><circle cx="118" cy="62" r="8" fill="#22252f"/></svg>`,
+  speaker: (c) => `<svg viewBox="0 0 200 200"><ellipse cx="100" cy="176" rx="50" ry="9" fill="#000" opacity=".12"/><rect x="58" y="30" width="84" height="144" rx="42" fill="${c}"/><circle cx="100" cy="122" r="28" fill="#000" opacity=".25"/><circle cx="100" cy="122" r="14" fill="#000" opacity=".3"/><circle cx="100" cy="68" r="12" fill="#000" opacity=".25"/><path d="M78 40h44" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".45"/></svg>`,
+};
+
+const PRODUCTS = [
+  { id: 1, name: 'Studio Wireless Headphones', cat: 'tech', art: 'headphones', color: '#6d5efc', tile: '#e9e7ff', was: 249, pct: 50, rating: 4.8, reviews: 1284, stock: 12 },
+  { id: 2, name: 'Stoneware Mug Set (4)', cat: 'home', art: 'mug', color: '#e76f51', tile: '#fde6dc', was: 64, pct: 40, rating: 4.9, reviews: 642, stock: 7 },
+  { id: 3, name: 'Pulse Smart Watch', cat: 'tech', art: 'watch', color: '#2a9d8f', tile: '#dcf3ef', was: 199, pct: 35, rating: 4.7, reviews: 913, stock: 18, tag: 'Bestseller' },
+  { id: 4, name: 'Cedar & Fig Candle', cat: 'home', art: 'candle', color: '#8d6a9f', tile: '#efe4f5', was: 42, pct: 45, rating: 4.9, reviews: 2210, stock: 5 },
+  { id: 5, name: 'Everyday Runner Sneakers', cat: 'style', art: 'sneaker', color: '#ef476f', tile: '#ffe1e8', was: 140, pct: 30, rating: 4.6, reviews: 488, stock: 22 },
+  { id: 6, name: 'Commuter Backpack 22L', cat: 'style', art: 'backpack', color: '#264653', tile: '#dde8ec', was: 118, pct: 40, rating: 4.8, reviews: 731, stock: 9, tag: 'New' },
+  { id: 7, name: 'Arc Desk Lamp', cat: 'home', art: 'lamp', color: '#f4a261', tile: '#fdecd9', was: 89, pct: 55, rating: 4.7, reviews: 356, stock: 6 },
+  { id: 8, name: 'Pebble Bluetooth Speaker', cat: 'tech', art: 'speaker', color: '#118ab2', tile: '#d8eef6', was: 129, pct: 60, rating: 4.8, reviews: 1067, stock: 4, tag: 'Almost gone' },
+];
+const FREE_SHIP = 75;
+let cart = 0, cartTotal = 0, filter = 'all', theme = 'blackfriday', timer;
+const $ = (id) => document.getElementById(id);
+const money = (n) => '$' + n.toFixed(2).replace(/\.00$/, '');
+const priceOf = (p) => Math.round(p.was * (100 - p.pct)) / 100;
+
+function renderGrid() {
+  $('grid').innerHTML = PRODUCTS.filter((p) => filter === 'all' || p.cat === filter).map((p) => `
+    <article class="card">
+      <div class="thumb" style="background:${p.tile}">
+        ${ART[p.art](p.color)}
+        <span class="badge">-${p.pct}%</span>
+        ${p.tag ? `<span class="badge alt">${p.tag}</span>` : ''}
+        <button class="heart" type="button" aria-pressed="false" aria-label="Save ${p.name}">♥</button>
+      </div>
+      <div class="info">
+        <span class="meta">${p.cat}</span>
+        <h3 class="name">${p.name}</h3>
+        <div class="stars" aria-label="Rated ${p.rating} out of 5">★★★★★<span>${p.rating} (${p.reviews.toLocaleString()})</span></div>
+        <div class="price"><span class="now">${money(priceOf(p))}</span><span class="was">${money(p.was)}</span></div>
+        <div class="stock">${p.stock <= 7 ? `🔥 Only ${p.stock} left` : `${p.stock} left at this price`}<div class="bar"><i style="width:${Math.max(12, 100 - p.stock * 3.5)}%"></i></div></div>
+        <button class="add" type="button" data-id="${p.id}">Add to cart</button>
+      </div>
+    </article>`).join('');
+}
+
+function renderShip() {
+  const left = FREE_SHIP - cartTotal;
+  $('ship').innerHTML = (left > 0
+    ? `Add <b>${money(left)}</b> more for <b>free shipping</b>.`
+    : `🎉 You’ve unlocked <b>free shipping</b>!`) + `<div class="bar"><i style="width:${Math.min(100, (cartTotal / FREE_SHIP) * 100)}%"></i></div>`;
+}
+
+function toast(msg) {
+  const t = $('toast'); t.textContent = msg; t.classList.add('show');
+  clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+function tick() {
+  const c = CAMPAIGNS[theme];
+  const diff = Math.max(0, c._target - new Date());
+  const d = Math.floor(diff / 864e5), h = Math.floor(diff / 36e5) % 24, m = Math.floor(diff / 6e4) % 60, s = Math.floor(diff / 1e3) % 60;
+  [['d', d], ['h', h], ['m', m], ['s', s]].forEach(([k, v]) => ($(k).textContent = String(v).padStart(2, '0')));
+}
+
+function setTheme(name) {
+  if (!CAMPAIGNS[name]) name = 'blackfriday';
+  theme = name;
+  const c = CAMPAIGNS[name];
+  c._target = c.target();
+  document.body.dataset.theme = name;
+  document.querySelectorAll('[data-set]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.set === name)));
+  $('eyebrow').textContent = c.eyebrow;
+  $('title').innerHTML = c.title;
+  $('lead').textContent = c.lead;
+  $('cdLabel').textContent = c.cdLabel;
+  $('code').textContent = c.code;
+  $('pct').innerHTML = `${c.pct}<sup>%</sup>`;
+  $('artSub').textContent = c.artSub;
+  $('sticker').innerHTML = c.sticker;
+  $('shopTitle').textContent = c.shop;
+  $('finalTitle').textContent = c.final;
+  const items = [...c.announce, ...c.announce].map((a) => `<span>${a}</span>`).join('');
+  $('announce').innerHTML = items + items;
+  history.replaceState(null, '', '#' + { blackfriday: 'black-friday', christmas: 'christmas', newyear: 'new-year' }[name]);
+  clearInterval(timer); tick(); timer = setInterval(tick, 1000);
+  startFx(name);
+}
+
+// Background effects: snow for Christmas, confetti sparkles for New Year, light streaks for Black Friday.
+let raf;
+function startFx(name) {
+  const cv = $('fx'), ctx = cv.getContext('2d');
+  cancelAnimationFrame(raf);
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const size = () => { cv.width = cv.offsetWidth * devicePixelRatio; cv.height = cv.offsetHeight * devicePixelRatio; };
+  size(); window.onresize = size;
+  const N = name === 'christmas' ? 90 : name === 'newyear' ? 70 : 40;
+  const colors = name === 'newyear' ? ['#f5c76b', '#ff5c8a', '#8be9fd', '#fff'] : name === 'christmas' ? ['#fff'] : ['#ffd60a', '#ffffff'];
+  const parts = Array.from({ length: N }, () => ({
+    x: Math.random(), y: Math.random(), r: name === 'blackfriday' ? 0.8 + Math.random() * 1.6 : 1.5 + Math.random() * 3,
+    v: 0.0006 + Math.random() * 0.0016, w: Math.random() * Math.PI * 2, c: colors[Math.floor(Math.random() * colors.length)],
+  }));
+  const draw = () => {
+    const W = cv.width, H = cv.height, k = devicePixelRatio;
+    ctx.clearRect(0, 0, W, H);
+    for (const p of parts) {
+      if (!reduce) { p.y += p.v; p.w += 0.02; if (p.y > 1.02) { p.y = -0.02; p.x = Math.random(); } }
+      const x = (p.x + Math.sin(p.w) * 0.01) * W, y = p.y * H;
+      ctx.globalAlpha = name === 'christmas' ? 0.75 : name === 'blackfriday' ? 0.35 + 0.25 * Math.sin(p.w * 3) : 0.6;
+      ctx.fillStyle = p.c;
+      if (name === 'newyear') { ctx.save(); ctx.translate(x, y); ctx.rotate(p.w); ctx.fillRect(-p.r * k, -p.r * k * 0.4, p.r * 2 * k, p.r * 0.8 * k); ctx.restore(); }
+      else { ctx.beginPath(); ctx.arc(x, y, p.r * k, 0, Math.PI * 2); ctx.fill(); }
+    }
+    if (!reduce) raf = requestAnimationFrame(draw);
+  };
+  draw();
+}
+
+document.addEventListener('click', (e) => {
+  const set = e.target.closest('[data-set]');
+  if (set) return setTheme(set.dataset.set);
+  const f = e.target.closest('[data-filter]');
+  if (f) {
+    filter = f.dataset.filter;
+    document.querySelectorAll('[data-filter]').forEach((b) => b.setAttribute('aria-pressed', String(b === f)));
+    return renderGrid();
+  }
+  const add = e.target.closest('.add');
+  if (add) {
+    const p = PRODUCTS.find((x) => x.id === +add.dataset.id);
+    cart++; cartTotal += priceOf(p);
+    const n = $('count'); n.textContent = cart; n.classList.add('bump'); setTimeout(() => n.classList.remove('bump'), 250);
+    add.textContent = '✓ Added'; add.classList.add('done');
+    setTimeout(() => { add.textContent = 'Add to cart'; add.classList.remove('done'); }, 1400);
+    renderShip();
+    return toast(`${p.name} added to cart`);
+  }
+  const heart = e.target.closest('.heart');
+  if (heart) { const on = heart.getAttribute('aria-pressed') !== 'true'; heart.setAttribute('aria-pressed', String(on)); return toast(on ? 'Saved to wishlist' : 'Removed from wishlist'); }
+  if (e.target.closest('#codeBtn')) {
+    const code = CAMPAIGNS[theme].code;
+    (navigator.clipboard ? navigator.clipboard.writeText(code) : Promise.reject()).then(() => toast(`Code ${code} copied`), () => toast(`Use code ${code} at checkout`));
+  }
+});
+
+const fromHash = { '#christmas': 'christmas', '#new-year': 'newyear', '#black-friday': 'blackfriday' }[location.hash];
+const auto = (() => { const m = new Date().getMonth(), d = new Date().getDate(); return m === 11 && d >= 1 ? (d <= 25 ? 'christmas' : 'newyear') : 'blackfriday'; })();
+renderGrid(); renderShip(); setTheme(fromHash || auto);
+window.addEventListener('hashchange', () => { const t = { '#christmas': 'christmas', '#new-year': 'newyear', '#black-friday': 'blackfriday' }[location.hash]; if (t && t !== theme) setTheme(t); });
+})();
+</script>
+</body>
+</html>
